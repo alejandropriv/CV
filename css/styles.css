@@ -1,0 +1,489 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+ *, *::after, *::before {
+   box-sizing: border-box;
+}
+ html, body {
+   height: 100%;
+}
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   line-height: 2em;
+}
+ a {
+   color: #fff;
+   text-decoration: none;
+}
+ .clearfix::after, .clearfix::before {
+   content: " ";
+   display: table;
+}
+ .clearfix::after {
+   clear: both;
+}
+ .bold {
+   color: #fff;
+   font-weight: 400;
+}
+ .resume-wrapper {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   height: 3510px;
+
+}
+ .separator1 {
+   position: relative;
+   top: 1755px;
+   left: 0px;
+}
+ .separator2 {
+   position: relative;
+   top: 3510;
+   left: 0px;
+}
+ .divider {
+   width: 100%;
+   height: 200px;
+}
+ .dividerProfile {
+   padding-top: 15px;
+}
+ .spacer1 {
+   margin-right: 3.4em;
+   display: inline-block;
+}
+ .spacer2 {
+   margin-right: 0.25em;
+   display: inline-block;
+}
+ .name-title {
+   background: #fff;
+   width: 100%;
+   float: left;
+   color: #fff;
+   padding-bottom: 20px;
+}
+ .name-title h1 {
+   font-size: 3em;
+   text-align: left;
+   font-family: 'Varela Round', sans-serif;
+   color: #000;
+   text-transform: uppercase;
+   line-height: 1em;
+   margin-top: 0px;
+   /*padding-top: 20px;*/
+}
+ @media (max-width: 1200px) {
+   .name-title h1 {
+     /*padding-top: 20px;*/
+  }
+}
+ @media (max-width: 450px) {
+   .name-title h1 {
+     font-size: 1.8em;
+     /*padding-top: 20px;*/
+  }
+}
+ strong {
+   font-weight: bold;
+}
+ .profile {
+   background: #3d3e42;
+   flex-grow:1;
+   /* width: 450px; */
+   min-width: 150px; 
+   height: 3510px;
+   float: left;
+   color: #9099a0;
+}
+ @media (max-width: 850px) {
+   .profile {
+     width: 100%;
+  }
+}
+ .profile .name-wrapper {
+   float: left;
+   width: 60%;
+}
+ .profile h1 {
+   font-size: 2.5em;
+   text-align: left;
+   font-family: 'Varela Round', sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   line-height: 3em;
+   padding-top: 40px;
+}
+ @media (max-width: 1200px) {
+   .profile h1 {
+     padding-top: 20px;
+  }
+}
+ @media (max-width: 450px) {
+   .profile h1 {
+     font-size: 1.8em;
+     padding-top: 20px;
+  }
+}
+ .profile ul {
+   list-style-type: none;
+}
+ .profile li {
+   margin-bottom: 10px;
+}
+ .profile .picture-resume-wrapper {
+   width: 100%;
+   display: block;
+   float: left;
+   /* padding-left: 20px; */
+}
+ @media (max-width: 1200px) {
+   .profile .picture-resume-wrapper {
+     width: 100%;
+  }
+}
+ .profile .picture-resume {
+    width: 100%;
+   /* height: 300px; */
+   background-size: cover;
+   border-radius: 50%;
+   margin-right: 0px;
+   display: table;
+   position: relative;
+   vertical-align: middle;
+}
+ .profile .picture-resume span {
+   display: table-cell;
+   vertical-align: middle;
+   position: relative;
+   margin: 0 auto;
+   z-index: 10;
+   text-align: center;
+}
+ .profile .picture-resume img {
+   border-radius: 50%;
+   width: 100%;
+}
+ .profile .contact-info {
+   margin-top: 40px;
+   /* font-weight: 300; */
+}
+ .profile .list-titles {
+   float: left;
+   text-align: left;
+   font-weight: 500;
+   width: 40px;
+   padding: 0px;
+   color: #fff;
+}
+ .profile .list-content {
+   float: left;
+   /* width: 300px; */
+   padding: 0px;
+   text-align: left;
+   font-weight: 400;
+   color: #fff;
+   
+}
+
+@media (max-width: 1200px) {
+  .list-content {
+    font-size: 11px;
+ }
+}
+
+
+
+
+.contact-presentation {
+  color: #000;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile .contact-presentation {
+   text-align: left;
+   font-weight: 600;
+   margin-top: 60px;
+   margin-bottom: 80px;
+}
+ @media (max-width: 1200px) {
+   .profile .contact-presentation {
+     margin-top: 70px;
+     margin-bottom: 70px;
+  }
+}
+ @media (max-width: 850px) {
+   .profile .contact-presentation {
+     margin-top: 50px;
+     margin-bottom: 50px;
+  }
+}
+ .profile svg {
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+ .profile .st0, .profile .st1 {
+   fill: #fff;
+}
+ .experience {
+   background: #fff;
+   flex-grow:2;
+   
+
+   color: #000;
+   font-weight: 300;
+   min-height: 100%;
+   min-height: 100vh;
+}
+ @media (max-width: 850px) {
+   .experience {
+     width: 100%;
+  }
+}
+ .experience h3.experience-title {
+   color: #000;
+   text-align: left;
+   text-transform: uppercase;
+   font-size: 1.2em;
+   margin-bottom: 15px;
+   font-weight: 600;
+}
+ .experience .company-wrapper {
+   width: 190px;
+   float: left;
+   text-align: left;
+   padding-right: 5px;
+   margin-bottom: 20px;
+   font-weight: 600;
+}
+
+.company-description {
+  font-size: 14px;
+}
+
+ @media (max-width: 450px) {
+   .experience .company-wrapper {
+     width: 100%;
+     margin-bottom: 20px;
+  }
+}
+ .experience .job-wrapper {
+   width: 95%;
+   float: left;
+   text-align: left;
+   padding-right: 1px;
+   margin-bottom: 25px;
+}
+ @media (max-width: 450px) {
+   .experience .job-wrapper {
+     width: 100%;
+     margin-bottom: 40px;
+  }
+}
+ .experience .extra-space {
+   margin-bottom: 40px;
+}
+ .experience .extra-space {
+   margin-bottom: 60px;
+}
+ .experience .dateformat {
+   font-weight: 300;
+   font-size: 12px;
+}
+ .section-padding {
+   padding: 40px 20px 20px 20px;
+}
+ @media (max-width: 850px) {
+   .section-padding {
+     padding: 40px 60px 40px 40px;
+  }
+}
+ @media (max-width: 450px) {
+   .section-padding {
+     padding: 40px 60px 40px 40px;
+  }
+}
+ .section-padding-content {
+   padding: 30px 20px 40px 40px;
+}
+ @media (max-width: 850px) {
+   .section-padding-content {
+     padding: 30px 20px 40px 40px;
+  }
+}
+ @media (max-width: 450px) {
+   .section-padding-content {
+     padding: 30px 20px 40px 40px;
+  }
+}
+ .section-wrapper {
+   width: 100%;
+   float: left;
+   text-align: left;
+   color: #fff;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+ @media (max-width: 450px) {
+   .section-wrapper {
+     width: 100%;
+  }
+}
+ .section-wrapper:nth-child(3) {
+   padding-right: 8%;
+}
+ .section-wrapper h3.section-title {
+   color: #fff;
+   text-align: left;
+   text-transform: uppercase;
+   font-size: 1.2em;
+   margin-bottom: 20px;
+   font-weight: 400;
+}
+ .section-wrapper .skill-percentage {
+   margin-bottom: 10px;
+   position: relative;
+}
+ .section-wrapper .skill-percentage::after {
+   content: "";
+   width: 100%;
+   height: 6px;
+   background: #9099a0;
+   display: block;
+   margin-top: 3px;
+}
+ .section-wrapper .skill-percentage::before {
+   content: "";
+   height: 6px;
+   background: #fff;
+   position: absolute;
+   margin-top: 3px;
+   bottom: 0;
+}
+ .section-wrapper .skill-percentage:nth-child(1)::before {
+   width: 85%;
+   animation: skill_1 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(2)::before {
+   width: 60%;
+   animation: skill_2 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(3)::before {
+   width: 80%;
+   animation: skill_3 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(4)::before {
+   width: 50%;
+   animation: skill_4 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(5)::before {
+   width: 60%;
+   animation: skill_5 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(6)::before {
+   width: 50%;
+   animation: skill_6 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(7)::before {
+   width: 50%;
+   animation: skill_7 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(8)::before {
+   width: 50%;
+   animation: skill_8 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(9)::before {
+   width: 70%;
+   animation: skill_9 0.6s ease;
+}
+ .section-wrapper .skill-percentage:nth-child(10)::before {
+   width: 70%;
+   animation: skill_10 0.6s ease;
+}
+ @keyframes skill_1 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 80%;
+  }
+}
+ @keyframes skill_2 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 90%;
+  }
+}
+ @keyframes skill_3 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 50%;
+  }
+}
+ @keyframes skill_4 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 60%;
+  }
+}
+ @keyframes skill_5 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 70%;
+  }
+}
+ @keyframes skill_6 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 50%;
+  }
+}
+ @keyframes skill_7 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 50%;
+  }
+}
+ @keyframes skill_8 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 50%;
+  }
+}
+ @keyframes skill_9 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 70%;
+  }
+}
+ @keyframes skill_10 {
+   from {
+     width: 0%;
+  }
+   to {
+     width: 70%;
+  }
+}
+ 

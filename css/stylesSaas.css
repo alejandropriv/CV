@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+$profileBg:#3d3e42;
+$skillsBg:#fff;
+
+$info-titleColor:#fff;
+
+$titleColor:#000;
+$profileColor:#9099a0;
+$skillsColor:#fff; 
+$linkColor:#fff;
+$boldColor:#fff;
+$contentColor:#000;
+$skillBackgroundColor:#9099a0;
+$boldProfileColor:#000;
+
+$time:0.6s;
+
+ 
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1500px)  { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 1200px)  { @content; }
+  }
+  @if $point == brother-bear {
+    @media (max-width: 850px)  { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 450px)  { @content; }
+  }
+}
+
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  line-height:2em;
+}
+a{color:$linkColor; text-decoration:none;}
+.clearfix::after, .clearfix::before {
+  content: " ";
+  display: table;
+}
+.clearfix::after{clear:both;}
+.bold {color:$boldColor; font-weight:400;}
+
+.resume-wrapper {
+  position:relative;
+  text-align:center;
+  height: 3510px;
+
+}
+
+
+.separator1{
+ position: relative;
+  top: 1755px;
+  left: 0px;
+}
+
+.separator2{
+ position: relative;
+  top: 3510;
+  left: 0px;
+}
+.divider{
+  width:100%;
+  height: 200px;  
+}
+
+ .dividerProfile {
+   padding-top: 565px;
+
+}
+
+.spacer1 {
+  margin-right:3.4em;
+  display:inline-block;
+}
+.spacer2 {
+  margin-right:0.25em;
+  display:inline-block;
+}
+
+.container {
+  
+
+} 
+.name-title{
+  background:$skillsBg;
+  width:100%;
+  float:left;
+  color:$skillsColor;
+  padding-bottom:20px; 
+
+    h1 {
+    font-size:3.0em;
+    text-align:left;
+    font-family: 'Varela Round', sans-serif;
+    color:$titleColor;
+    text-transform:uppercase;
+    line-height:1em;
+    padding-top:20px; 
+    @include breakpoint(mama-bear) {
+       padding-top:20px;
+    }
+    @include breakpoint(baby-bear) {
+      font-size:1.8em;  
+      padding-top:20px;
+    } 
+  }
+  
+}
+
+strong { font-weight: bold; }
+
+.profile {
+  background:$profileBg;
+  width:450px;
+  min-width:450px;
+  height: 3510px;
+
+  float:left;
+  color:$profileColor;
+  @include breakpoint(brother-bear) { width: 100%; }
+  .name-wrapper {
+    float:left;
+    width:60%;
+  }
+  h1 {
+    font-size:2.5em;
+    text-align:left;
+    font-family: 'Varela Round', sans-serif;
+    color:$boldColor;
+    text-transform:uppercase;
+    line-height:3em;
+    padding-top:40px; 
+    @include breakpoint(mama-bear) {
+       padding-top:20px;
+    }
+    @include breakpoint(baby-bear) {
+      font-size:1.8em;  
+      padding-top:20px;
+    } 
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+      margin-bottom:10px;
+    }
+  
+  .picture-resume-wrapper {
+    width:100%;
+    display:block;
+    float:left;
+    padding-left:20px;
+    @include breakpoint(mama-bear) {
+       width:100%;
+    }
+  }
+  .picture-resume {
+    width:300px;
+    height:300px;
+    background-size:cover;
+    border-radius:50%;
+    margin-right:0px;
+    display:table;
+    position:relative;
+    vertical-align:middle;
+    span {
+        display:table-cell;
+        vertical-align: middle;
+        position:relative;
+        margin:0 auto;
+        z-index:10;
+       text-align:center
+    }
+    img {
+      border-radius:50%;
+      width:300px;
+
+    }
+
+  }
+  .contact-info{
+
+    margin-top:15px;
+    font-weight:300;
+    
+  }
+  .list-titles {
+    float:left;
+    text-align:left;
+    font-weight:500;
+    width:40px;
+    padding:0px; 
+    color:$info-titleColor;
+  }
+  .list-content{
+    float:left;
+    width:300px;
+    padding:0px; 
+    text-align:left;
+    font-weight:200;
+    color:$skillsColor;
+  }
+  .contact-presentation {
+    text-align:left;
+    font-weight:250;
+    margin-top:60px;
+    margin-bottom:80px;
+    color: #0000;
+    @include breakpoint(mama-bear) {margin-top:70px;margin-bottom:70px; } 
+    @include breakpoint(brother-bear) {margin-top:50px;margin-bottom:50px; } 
+    
+  }
+  svg {
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    //display:none;
+  }
+
+  .st0, .st1 {
+    fill:#fff;
+  }
+
+}
+.experience {
+  background:$skillsBg;
+  width: 900px;
+  float:left;
+  position:relative;
+  color:$contentColor;
+  font-weight:300;
+  min-height:100%;
+  min-height:100vh;
+  @include breakpoint(brother-bear) { width: 100%; } 
+  h3.experience-title {
+    color:$titleColor;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:15px;
+    font-weight:600;
+  }
+  .company-wrapper {
+    width: 190px;
+    float:left;
+    text-align:left;
+    padding-right:5px;
+    margin-bottom:20px;
+        font-weight:600;
+
+    @include breakpoint(baby-bear) {width:100%; margin-bottom:20px;} 
+  }
+  .job-wrapper {
+    width:70%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:25px;
+    @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
+  }
+
+  .extra-space{
+        margin-bottom:40px;
+
+  }
+    .extra-space{
+        margin-bottom:60px;
+
+  }
+  .dateformat{
+    font-weight: 300;
+  }
+
+}
+
+.section-padding {
+ padding: 40px 60px 40px 40px;
+ @include breakpoint(brother-bear) { padding: 40px 60px 40px 40px; }
+ @include breakpoint(baby-bear) { padding: 40px 60px 40px 40px; }
+}
+
+.section-padding-content {
+ padding: 40px 60px 40px 40px;
+ @include breakpoint(brother-bear) { padding: 40px 60px 40px 40px; }
+ @include breakpoint(baby-bear) { padding: 40px 60px 40px 40px; }
+}
+
+.section-wrapper {
+  width:100%;
+  float:left;
+  text-align:left;
+  color:$skillsColor;
+  font-weight:300;
+  margin-bottom:20px;
+  @include breakpoint(baby-bear) {width:100%;}
+  &:nth-child(3){ 
+    padding-right:8%;
+  }
+  h3.section-title {
+    color:$linkColor;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .skill-percentage {
+    margin-bottom:10px;
+    position:relative;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      background:$skillBackgroundColor;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      background:$linkColor;
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+    &:nth-child(1)::before {width:85%;animation: skill_1 $time ease;}
+    &:nth-child(2)::before {width:60%;animation: skill_2 $time ease;} 
+    &:nth-child(3)::before {width:80%;animation: skill_3 $time ease;}
+    &:nth-child(4)::before {width:50%;animation: skill_4 $time ease;}
+    &:nth-child(5)::before {width:60%;animation: skill_5 $time ease;}
+    &:nth-child(6)::before {width:50%;animation: skill_6 $time ease;}
+    &:nth-child(7)::before {width:50%;animation: skill_7 $time ease;}
+    &:nth-child(8)::before {width:50%;animation: skill_8 $time ease;}
+    &:nth-child(9)::before {width:70%;animation: skill_9 $time ease;}
+    &:nth-child(10)::before {width:70%;animation: skill_10 $time ease;}
+
+     
+  }
+  
+}
+
+@keyframes skill_1 {from {width:0%;}to {width:80%;}}
+@keyframes skill_2 {from {width:0%;}to {width:90%;}}
+@keyframes skill_3 {from {width:0%;}to {width:50%;}}
+@keyframes skill_4 {from {width:0%;}to {width:60%;}}
+@keyframes skill_5 {from {width:0%;}to {width:70%;}}  
+@keyframes skill_6 {from {width:0%;}to {width:50%;}}  
+@keyframes skill_7 {from {width:0%;}to {width:50%;}}  
+@keyframes skill_8 {from {width:0%;}to {width:50%;}}  
+@keyframes skill_9 {from {width:0%;}to {width:70%;}}
+@keyframes skill_10 {from {width:0%;}to {width:70%;}} 
