@@ -31,7 +31,7 @@
    display: flex;
    position: relative;
    text-align: center;
-   height: 4000px;
+   height: 6000px;
 
 }
  .separator1 {
@@ -41,7 +41,7 @@
 }
  .separator2 {
    position: relative;
-   top: 4000;
+   top: 6000;
    left: 0px;
 }
  .divider {
@@ -54,9 +54,7 @@
 }
 
 .firma {
-  height: 80;
-  width: 180px;
-  display: block;
+  padding-top: 15px;
 }
  .spacer1 {
    margin-right: 3.4em;
@@ -71,21 +69,22 @@
    width: 100%;
    float: left;
    color: #fff;
-   padding-bottom: 5px;
 }
+
  .name-title h1 {
-   font-size: 2.5em;
+   font-size: 28px;
    text-align: center;
    font-family: 'Varela Round', sans-serif;
    color: #000;
    text-transform: uppercase;
    line-height: 1em;
    margin-top: 0px;
-   /*padding-top: 20px;*/
+   padding: 40px 0px 25px 0px;
+
 }
- @media (max-width: 1200px) {
+ /* @media (max-width: 1200px) {
    .name-title h1 {
-     /*padding-top: 20px;*/
+    padding-top: 10px;
   }
 }
  @media (max-width: 450px) {
@@ -93,16 +92,16 @@
      font-size: 1.8em;
      /*padding-top: 20px;*/
   }
-}
+} */
  strong {
    font-weight: bold;
 }
  .profile {
    display:flex;
    background: #3d3e42;
-   width: 320px;
-   min-width: 320px;
-   height: 4000x;
+   width: 350px;
+   min-width: 350px;
+   height: 6000x;
    float: left;
    color: #9099a0;
 }
@@ -145,7 +144,7 @@
    width: 100%;
    display: block;
    float: left;
-   padding-left: 5px;
+   padding-left: 0px;
 }
  @media (max-width: 1200px) {
    .profile .picture-resume-wrapper {
@@ -153,8 +152,8 @@
   }
 }
  .profile .picture-resume {
-   width: 270px;
-   height: 270px;
+   width: 310px;
+   height: 310px;
    background-size: cover;
    border-radius: 50%;
    margin-right: 0px;
@@ -172,7 +171,7 @@
 }
  .profile .picture-resume img {
    border-radius: 50%;
-   width: 250px;
+   width: 270px;
 }
  .profile .contact-info {
    margin-top: 30px;
@@ -192,15 +191,17 @@
    padding: 0px;
    text-align: left;
    font-weight: 200;
-   font-size: 11px;
+   font-size: 12px;
    color: #fff;
 }
 
 .contact-presentation {
   color: #000;
   text-align: left;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
+  text-align: center;
+  padding: 0px 0px 15px 0px
 }
 
 .profile .contact-presentation {
@@ -249,8 +250,8 @@
    color: #000;
    text-align: left;
    text-transform: uppercase;
-   font-size: 1.2em;
-   margin-bottom: 15px;
+   font-size: 24px;
+   margin-bottom: 40px;
    font-weight: 600;
 }
  .experience .company-wrapper {
@@ -260,10 +261,11 @@
    padding-right: 5px;
    margin-bottom: 7px;
    font-weight: 600;
+   font-size: 20px;
 }
 
 .company-description {
-  font-size: 12px;
+  font-size: 18px;
   width:100%;
   padding-bottom: 20px;
 }
@@ -275,7 +277,7 @@
   }
 }
  .experience .job-wrapper {
-   width: 97%;
+   width: 90%;
    float: left;
    text-align: left;
    padding-right: 1px;
@@ -295,7 +297,7 @@
 }
  .experience .dateformat {
    font-weight: 300;
-   font-size: 12px;
+   font-size: 15px;
    font-style: italic;
 }
  .section-padding {
@@ -491,6 +493,8 @@
 }
  
 
-#separator {
-  height: 100px
-}
+/* .firma {
+  width: 180px;
+  height: 80px;
+  clear: both;
+} */
