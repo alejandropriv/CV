@@ -1,113 +1,123 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
- @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
  *, *::after, *::before {
    box-sizing: border-box;
 }
- html, body {
+html, body {
    height: 100%;
 }
- body {
+body {
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
    line-height: 2em;
+   margin: 0px;
 }
- a {
+a {
    color: #fff;
    text-decoration: none;
 }
- .clearfix::after, .clearfix::before {
+.clearfix::after, .clearfix::before {
    content: " ";
    display: table;
 }
- .clearfix::after {
+.clearfix::after {
    clear: both;
 }
- .bold {
+.bold {
    color: #fff;
    font-weight: 400;
 }
- .resume-wrapper {
+.resume-wrapper {
    display: flex;
-   flex-direction: row;
+   position: relative;
    text-align: center;
-   height: 3510px;
+   /*height: 6000px;*/
 
 }
- .separator1 {
+.separator1 {
    position: relative;
    top: 1755px;
    left: 0px;
 }
- .separator2 {
+.separator2 {
    position: relative;
-   top: 3510;
+   top: 6000;
    left: 0px;
 }
- .divider {
+.divider {
    width: 100%;
-   height: 200px;
+   height: 50px;
+   clear:both;
 }
- .dividerProfile {
+.dividerProfile {
    padding-top: 15px;
 }
- .spacer1 {
-   margin-right: 3.4em;
+
+.firma {
+  padding: 15px 0px 0px 20px;
+  display: flex;
+}
+.spacer1 {
+   margin-right: 4px;
    display: inline-block;
 }
- .spacer2 {
+.spacer2 {
    margin-right: 0.25em;
    display: inline-block;
 }
- .name-title {
+.name-title {
    background: #fff;
    width: 100%;
    float: left;
    color: #fff;
-   padding-bottom: 20px;
+   line-height: 1em;
 }
- .name-title h1 {
-   font-size: 3em;
-   text-align: left;
+
+.name-title h1 {
+   line-height: 1em;
+   font-size: 27px;
+   text-align: center;
    font-family: 'Varela Round', sans-serif;
    color: #000;
    text-transform: uppercase;
-   line-height: 1em;
    margin-top: 0px;
-   /*padding-top: 20px;*/
+   padding: 10px 0px 5px 0px;
+   width: 700px;
+
 }
- @media (max-width: 1200px) {
+ /* @media (max-width: 1200px) {
    .name-title h1 {
-     /*padding-top: 20px;*/
+    padding-top: 10px;
   }
 }
  @media (max-width: 450px) {
    .name-title h1 {
      font-size: 1.8em;
-     /*padding-top: 20px;*/
+     /*padding-top: 20px;
   }
-}
- strong {
+} */
+strong {
    font-weight: bold;
 }
- .profile {
+.profile {
+   display:flex;
    background: #3d3e42;
-   flex-grow:1;
-   /* width: 450px; */
-   min-width: 150px; 
-   height: 3510px;
+   width: 350px;
+   min-width: 350px;
+   height: 3200px;
    float: left;
    color: #9099a0;
 }
- @media (max-width: 850px) {
+@media (max-width: 850px) {
    .profile {
      width: 100%;
   }
 }
- .profile .name-wrapper {
+.profile .name-wrapper {
    float: left;
    width: 60%;
 }
- .profile h1 {
+.profile h1 {
    font-size: 2.5em;
    text-align: left;
    font-family: 'Varela Round', sans-serif;
@@ -116,18 +126,18 @@
    line-height: 3em;
    padding-top: 40px;
 }
- @media (max-width: 1200px) {
+@media (max-width: 1200px) {
    .profile h1 {
      padding-top: 20px;
   }
 }
- @media (max-width: 450px) {
+@media (max-width: 450px) {
    .profile h1 {
      font-size: 1.8em;
      padding-top: 20px;
   }
 }
- .profile ul {
+.profile ul {
    list-style-type: none;
 }
  .profile li {
@@ -137,7 +147,8 @@
    width: 100%;
    display: block;
    float: left;
-   /* padding-left: 20px; */
+   padding-left: 0px;
+   padding-top: 25px;
 }
  @media (max-width: 1200px) {
    .profile .picture-resume-wrapper {
@@ -145,8 +156,8 @@
   }
 }
  .profile .picture-resume {
-    width: 100%;
-   /* height: 300px; */
+   width: 310px;
+   height: 310px;
    background-size: cover;
    border-radius: 50%;
    margin-right: 0px;
@@ -164,11 +175,11 @@
 }
  .profile .picture-resume img {
    border-radius: 50%;
-   width: 100%;
+   width: 270px;
 }
  .profile .contact-info {
-   margin-top: 40px;
-   /* font-weight: 300; */
+   margin-top: 30px;
+   font-weight: 300;
 }
  .profile .list-titles {
    float: left;
@@ -180,28 +191,24 @@
 }
  .profile .list-content {
    float: left;
-   /* width: 300px; */
+   /* width: 100%; */
    padding: 0px;
    text-align: left;
-   font-weight: 400;
+   font-weight: 200;
+   font-size: 12px;
    color: #fff;
-   
 }
-
-@media (max-width: 1200px) {
-  .list-content {
-    font-size: 11px;
- }
-}
-
-
-
 
 .contact-presentation {
   color: #000;
   text-align: left;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
+  text-align: center;
+  padding: 0px 0px 5px 0px;
+  width: 700px;
+  line-height: 1em;
+
 }
 
 .profile .contact-presentation {
@@ -233,9 +240,9 @@
 }
  .experience {
    background: #fff;
-   flex-grow:2;
-   
-
+   width: 800px;
+   float: left;
+   position: relative;
    color: #000;
    font-weight: 300;
    min-height: 100%;
@@ -250,21 +257,39 @@
    color: #000;
    text-align: left;
    text-transform: uppercase;
-   font-size: 1.2em;
-   margin-bottom: 15px;
-   font-weight: 600;
-}
- .experience .company-wrapper {
-   width: 190px;
-   float: left;
-   text-align: left;
-   padding-right: 5px;
-   margin-bottom: 20px;
+   font-size: 24px;
+   margin-bottom: 40px;
    font-weight: 600;
 }
 
+.experience-title {
+  color: #000;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.sub-title {
+  color: #000;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ .experience .company-wrapper {
+   /* width: 190px; */
+   float: left;
+   text-align: left;
+   padding-right: 5px;
+   margin-bottom: 7px;
+   font-weight: 600;
+   font-size: 20px;
+}
+
 .company-description {
-  font-size: 14px;
+  font-size: 15px;
+  width:100%;
+  padding-bottom: 5px;
 }
 
  @media (max-width: 450px) {
@@ -274,11 +299,11 @@
   }
 }
  .experience .job-wrapper {
-   width: 95%;
+   width: 98%;
    float: left;
    text-align: left;
    padding-right: 1px;
-   margin-bottom: 25px;
+   margin-bottom: 11px;
 }
  @media (max-width: 450px) {
    .experience .job-wrapper {
@@ -294,14 +319,15 @@
 }
  .experience .dateformat {
    font-weight: 300;
-   font-size: 12px;
+   font-size: 15px;
+   font-style: italic;
 }
  .section-padding {
-   padding: 40px 20px 20px 20px;
+   padding: 40px 20px 50px 20px;
 }
  @media (max-width: 850px) {
    .section-padding {
-     padding: 40px 60px 40px 40px;
+     padding: 60px 20px 50px 20px;
   }
 }
  @media (max-width: 450px) {
@@ -323,11 +349,12 @@
   }
 }
  .section-wrapper {
-   width: 100%;
+   width: 90%;
    float: left;
    text-align: left;
    color: #fff;
-   font-weight: 300;
+   font-weight: 200;
+   font-size: 13px;
    margin-bottom: 20px;
 }
  @media (max-width: 450px) {
@@ -366,124 +393,4 @@
    margin-top: 3px;
    bottom: 0;
 }
- .section-wrapper .skill-percentage:nth-child(1)::before {
-   width: 85%;
-   animation: skill_1 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(2)::before {
-   width: 60%;
-   animation: skill_2 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(3)::before {
-   width: 80%;
-   animation: skill_3 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(4)::before {
-   width: 50%;
-   animation: skill_4 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(5)::before {
-   width: 60%;
-   animation: skill_5 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(6)::before {
-   width: 50%;
-   animation: skill_6 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(7)::before {
-   width: 50%;
-   animation: skill_7 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(8)::before {
-   width: 50%;
-   animation: skill_8 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(9)::before {
-   width: 70%;
-   animation: skill_9 0.6s ease;
-}
- .section-wrapper .skill-percentage:nth-child(10)::before {
-   width: 70%;
-   animation: skill_10 0.6s ease;
-}
- @keyframes skill_1 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 80%;
-  }
-}
- @keyframes skill_2 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 90%;
-  }
-}
- @keyframes skill_3 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_4 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 60%;
-  }
-}
- @keyframes skill_5 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
- @keyframes skill_6 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_7 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_8 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_9 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
- @keyframes skill_10 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
- 
+
