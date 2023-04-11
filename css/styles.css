@@ -57,7 +57,7 @@
   padding-top: 15px;
 }
  .spacer1 {
-   margin-right: 3.4em;
+   margin-right: 4px;
    display: inline-block;
 }
  .spacer2 {
@@ -371,126 +371,108 @@
    margin-top: 3px;
    bottom: 0;
 }
- .section-wrapper .skill-percentage:nth-child(1)::before {
-   width: 85%;
+ .section-wrapper #SK1::before{
+   width: 60%;
    animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(2)::before {
+ .section-wrapper #SK2::before {
    width: 60%;
-   animation: skill_2 0.6s ease;
+   animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(3)::before {
-   width: 80%;
-   animation: skill_3 0.6s ease;
+.section-wrapper #SK3::before {
+  width: 80%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(4)::before {
-   width: 50%;
-   animation: skill_4 0.6s ease;
+
+.section-wrapper #SK4::before {
+  width: 60%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(5)::before {
-   width: 60%;
-   animation: skill_5 0.6s ease;
+
+.section-wrapper #SK5::before {
+  width: 60%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(6)::before {
-   width: 50%;
-   animation: skill_6 0.6s ease;
+
+.section-wrapper #SK6::before {
+  width: 90%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(7)::before {
-   width: 50%;
-   animation: skill_7 0.6s ease;
+
+.section-wrapper #SK7::before {
+  width: 70%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(8)::before {
-   width: 50%;
-   animation: skill_8 0.6s ease;
+
+.section-wrapper #SK8::before {
+  width: 80%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(9)::before {
-   width: 70%;
-   animation: skill_9 0.6s ease;
+
+.section-wrapper #SK9::before {
+  width: 80%;
+  animation: skill_1 0.6s ease;
 }
- .section-wrapper .skill-percentage:nth-child(10)::before {
-   width: 70%;
-   animation: skill_10 0.6s ease;
+
+
+.section-wrapper #SK10::before {
+  width: 70%;
+  animation: skill_1 0.6s ease;
 }
+
+.section-wrapper #SK11::before {
+  width: 70%;
+  animation: skill_1 0.6s ease;
+}
+
+.section-wrapper #SK12::before {
+  width: 80%;
+  animation: skill_1 0.6s ease;
+}
+
+.section-wrapper #SK13::before {
+  width: 90%;
+  animation: skill_1 0.6s ease;
+}
+
+.section-wrapper #SK14::before {
+  width: 50%;
+  animation: skill_1 0.6s ease;
+}
+
+.section-wrapper #SK15::before {
+  width: 50%;
+  animation: skill_1 0.6s ease;
+}
+
+
+.section-wrapper #SK101::before {
+  width: 70%;
+  animation: skill_1 0.6s ease;
+}
+
+
+.section-wrapper #SK102::before {
+  width: 90%;
+  animation: skill_1 0.6s ease;
+}
+
+
+.section-wrapper #SK103::before {
+  width: 100%;
+  animation: skill_1 0.6s ease;
+}
+
+
  @keyframes skill_1 {
    from {
      width: 0%;
   }
    to {
-     width: 80%;
+     width: 95%;
   }
 }
- @keyframes skill_2 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 90%;
-  }
-}
- @keyframes skill_3 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_4 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 60%;
-  }
-}
- @keyframes skill_5 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
- @keyframes skill_6 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_7 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_8 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 50%;
-  }
-}
- @keyframes skill_9 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
- @keyframes skill_10 {
-   from {
-     width: 0%;
-  }
-   to {
-     width: 70%;
-  }
-}
+
  
 
 /* .firma {

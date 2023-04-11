@@ -1,6 +1,7 @@
 // Some code thanks to @chrisgannon
 
-var records_hide = ["SK1"]
+//var records_hide = ["SK1"]
+var records_hide = []
 
 
 function hideFunction(id) {
@@ -17,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   records_hide.forEach(async (element) => {
     hideFunction(element);
   });
-  //hideFunction("cm3p")
 });
 
 
