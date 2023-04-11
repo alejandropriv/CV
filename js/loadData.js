@@ -145,32 +145,32 @@ function loadLanguageDE(){
       {
         "CTitle10": "Freiberuflich",
         "CTime10": "2016 Mai - 2016 Dez",
-        "CSubtitle10": "<strong>Web-Designer / Entwickler</strong>",
+        "CSubtitle10": "Web-Designer / Entwickler",
         "CDescription10": "- Java - backend<br> - Web-Page entwicklung<br>"      
       },
       {
         "CTitle9": "cm3p Gmbh",
         "CTime9": "2015 Oct - 2016 Apr",
-        "CSubtitle9": "<strong>Master Thesis: Integration von OpenCV in die Smartphone-Plattformen, IPhone, IPad und Android</strong>",
-        "CDescription9": "<strong>C++, OpenCV:</strong> Entwicklung einer App zum Bildvergleich unter Verwendung von SIFT und SURF, proprietären Algorithmen"      
+        "CSubtitle9": "App entwicklung - Android und iOS",
+        "CDescription9": "Entwicklung einer App zum Bildvergleich unter Verwendung von SIFT und SURF, proprietären Algorithmen, C++, openCV"      
       },
       {
         "CTitle8": "Hochschule Mannheim",
         "CTime8": "2015 Feb - 2015 Jun",
-        "CSubtitle8": "<strong>Steinbeis - Hiwi, Laborassistent</strong>",
-        "CDescription": "<strong>C++, OpenCV: </strong>Digitale Bildverarbeitung."      
+        "CSubtitle8": "Steinbeis - Hiwi, Laborassistent",
+        "CDescription8": "Digitale Bildverarbeitung, C++, OpenCV"      
       },
       {
         "CTitle7": "Freiberuflich",
         "CTime7": "2011 Okt - 2012 Mai",
-        "CSubtitle7": "<strong>Software Entwicklung</strong>",
-        "CDescription7": "<strong>Webrageous.com</strong><br>- PHP, jquery scripts<br><strong>Software Sales and Development</strong><br>- PHP, jquery scripts, Testen von Websites, Drupal, Wordpress.<br><strong>Others</strong><br>- Testen von Anwendungen und Einrichten eines CDN"      
+        "CSubtitle7": "Software Entwicklung",
+        "CDescription7": "<i>Webrageous.com:</i> - PHP, jquery scripts<br><i>Software Sales and Development:</i>- PHP, jquery scripts, Testen von Websites, Drupal.<br><i>Andere:</i> - Testen von Anwendungen und Einrichten eines CDN"      
       },
       {
         "CTitle6": "Pontificia Universidad Javeriana",
         "CTime6": "2006 Jun - 2006 Oct",
-        "CSubtitle6": "<strong>Web - Entwicklung</strong>",
-        "CDescription6": "- Entwicklung von Software-Tools für das XI Symposium in Image Processing, Signals and Artificial Vision<br> - Web Programming in PHP and MYSQL, Openconf"      
+        "CSubtitle6": "Web - Entwicklung",
+        "CDescription6": "- Entwicklung von Software-Tools für das XI Symposium in Image Processing, <br><span class='spacer1'>&nbsp;</span> Signals und Artificial Vision<br> - Web Programming in PHP and MYSQL, Openconf"      
       }
     ],
 
@@ -320,31 +320,31 @@ function loadData(){
 
   document.querySelector("#CTitle10").innerText = data.C[0].CTitle10
   document.querySelector("#CTime10").innerText = data.C[0].CTime10
-  document.querySelector("#CSubtitle10").innerText = data.C[0].CSubtitle10
+  document.querySelector("#CSubtitle10").innerHTML = data.C[0].CSubtitle10
   document.querySelector("#CDescription10").innerHTML = data.C[0].CDescription10
 
 
   document.querySelector("#CTitle9").innerText = data.C[1].CTitle9
   document.querySelector("#CTime9").innerText = data.C[1].CTime9
-  document.querySelector("#CSubtitle9").innerText = data.C[0].CSubtitle9
+  document.querySelector("#CSubtitle9").innerHTML = data.C[1].CSubtitle9
   document.querySelector("#CDescription9").innerHTML = data.C[1].CDescription9
 
 
   document.querySelector("#CTitle8").innerText = data.C[2].CTitle8
   document.querySelector("#CTime8").innerText = data.C[2].CTime8  
-  document.querySelector("#CSubtitle8").innerText = data.C[0].CSubtitle8
+  document.querySelector("#CSubtitle8").innerHTML = data.C[2].CSubtitle8
   document.querySelector("#CDescription8").innerHTML = data.C[2].CDescription8
 
 
   document.querySelector("#CTitle7").innerText = data.C[3].CTitle7
   document.querySelector("#CTime7").innerText = data.C[3].CTime7
-  document.querySelector("#CSubtitle7").innerText = data.C[0].CSubtitle7
+  document.querySelector("#CSubtitle7").innerHTML = data.C[3].CSubtitle7
   document.querySelector("#CDescription7").innerHTML = data.C[3].CDescription7
 
 
   document.querySelector("#CTitle6").innerText = data.C[4].CTitle6
   document.querySelector("#CTime6").innerText = data.C[4].CTime6
-  document.querySelector("#CSubtitle6").innerText = data.C[0].CSubtitle6
+  document.querySelector("#CSubtitle6").innerHTML = data.C[4].CSubtitle6
   document.querySelector("#CDescription6").innerHTML = data.C[4].CDescription6
 
 

@@ -254,6 +254,21 @@
    margin-bottom: 40px;
    font-weight: 600;
 }
+
+.experience-title {
+  color: #000;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sub-title {
+  color: #000;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+}
+
  .experience .company-wrapper {
    /* width: 190px; */
    float: left;
