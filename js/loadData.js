@@ -124,17 +124,17 @@ function loadLanguageDE(){
       {
         "WETitle2": "Software automatisierung  -  Choucair Testing S.A",
         "WETime2": "2013 Apr - 2014 Jan",
-        "WEDescription2": "- Entwicklung und Einsatz von Testautomatizierungframework in Java und Selenium<br>- Anforderungsanalyse, Testfälle und Testplanung"      
+        "WEDescription2": "Entwicklung und Einsatz von Testautomatizierungframework in Java und Selenium, Anforderungsanalyse, Testfälle und Testplanung"      
       }, 
       {
         "WETitle1": "Service Desk Analyst  -  Schlumberger",
         "WETime1": "2012 Apr - 2013 Apr",
-        "WEDescription1": "- Allgemeine IT-Unterstützung, Behebung von Netzwerkproblemen"      
+        "WEDescription1": "Allgemeine IT-Unterstützung, Behebung von Netzwerkproblemen"      
       },
       {
         "WETitle0": "Software Tester  -  IBM Tochterunternehmen",
         "WETime0": "2010 Jan - 2011 Aug",
-        "WEDescription0": "- Dynamische und statische Softwaretests, schreiben und planen von Testfällen"      
+        "WEDescription0": "Dynamische und statische Softwaretests, schreiben und planen von Testfällen"      
       }
 
     ],
@@ -168,9 +168,9 @@ function loadLanguageDE(){
       },
       {
         "CTitle6": "Pontificia Universidad Javeriana",
-        "CTime6": "2006 Jun - 2006 Oct",
+        "CTime6": "2006 Jun - 2006 Okt",
         "CSubtitle6": "Web - Entwicklung",
-        "CDescription6": "- Entwicklung von Software-Tools für das XI Symposium in Image Processing, <br><span class='spacer1'>&nbsp;</span> Signals und Artificial Vision<br> - Web Programming in PHP and MYSQL, Openconf"      
+        "CDescription6": "- Entwicklung von Software-Tools für das XI Symposium in Bildverarbeitung, <br><span class='spacer1'>&nbsp;</span> Signals und Artificial Vision<br> - Web Programming in PHP and MYSQL, Openconf"      
       }
     ],
 
@@ -192,8 +192,8 @@ function loadLanguageDE(){
       {
         "STitle8": "Pontificia Universidad Javeriana",
         "STime8": "2004 - 2010",
-        "SSubtitle8": "Bachelor in Elektrotechnik",
-        "SDescription8": "- Digitale Signale und Bildverarbeitung<br> - Computerwissenschaften<br> Diplomarbeit: Echtzeit-Algorithmus zur Fahrzeugzählung auf der Grundlage von Zinsstreifen.<br> - C++ mit der OpenCV-Bibliothek<br> - http://repository.javeriana.edu.co/handle/10554/7034"      
+        "SSubtitle8": "Elektronikingenieur",
+        "SDescription8": "- Digitale Signale und Bildverarbeitung<br> - Computerwissenschaften<br> Diplomarbeit: Echtzeit-Algorithmus zur Fahrzeugzählung auf der Grundlage von interessante Streifen.<br> - C++ mit der OpenCV-Bibliothek<br> - http://repository.javeriana.edu.co/handle/10554/7034"      
       },
 
       
@@ -348,9 +348,24 @@ function loadData(){
   document.querySelector("#CDescription6").innerHTML = data.C[4].CDescription6
 
 
+  document.querySelector("#STitleGeneral").innerText = data.STitleGeneral
 
+  document.querySelector("#STitle10").innerText = data.S[0].STitle10
+  document.querySelector("#STime10").innerText = data.S[0].STime10
+  document.querySelector("#SSubtitle10").innerHTML = data.S[0].SSubtitle10
+  document.querySelector("#SDescription10").innerHTML = data.S[0].SDescription10
+
+
+  document.querySelector("#STitle9").innerText = data.S[1].STitle9
+  document.querySelector("#STime9").innerText = data.S[1].STime9
+  document.querySelector("#SSubtitle9").innerHTML = data.S[1].SSubtitle9
+  document.querySelector("#SDescription9").innerHTML = data.S[1].SDescription9
 
   
+  document.querySelector("#STitle8").innerText = data.S[2].STitle8
+  document.querySelector("#STime8").innerText = data.S[2].STime8
+  document.querySelector("#SSubtitle8").innerHTML = data.S[2].SSubtitle8
+  document.querySelector("#SDescription8").innerHTML = data.S[2].SDescription8
 }
 
 
