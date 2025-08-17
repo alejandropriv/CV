@@ -1,10 +1,12 @@
 var data = ""
 loadLanguageEN()
-// loadLanguageDE()
+//loadLanguageDE()
+//loadLanguageES()
+
 loadData()
 
 function loadLanguageDE(){
-
+  console.log("Loading German language data...");
   data = 
   {
     "contactPresentation": "Devops Engineer",
@@ -43,8 +45,8 @@ function loadLanguageDE(){
       "title": "Ausbildung",
       "certifications": {
         "2023 - CKA: Certified Kubernetes administrator": "images/certs/cka.png",
-        "2022 - AWS: Cloud Practitioner": "images/certs/AWS-cloud-practitioner.png",
-        "2022 - Azure: Fundamentals": "images/certs/AZURE-cloud-practitioner.png",
+        "2022 - AWS: Cloud Practitioner": "",
+        "2022 - Azure: Fundamentals": "",
       } 
     },
 
@@ -219,7 +221,7 @@ function loadLanguageDE(){
 }
 
 function loadLanguageEN(){
-
+  console.log("Loading English language data...");
   data = 
   {
     "contactPresentation": "Devops Engineer",
@@ -227,22 +229,26 @@ function loadLanguageEN(){
     "SK100": {
       "title": "Technologies",
       "training": {
-        "Kubernetes": 85,
-        "Helm Charts": 75,
-        "ArgoCD": 70,
+        "Kubernetes": 90,
+        "ArgoCD": 80,
+        "Helm Charts": 80,
+        "Azure": 80,
+        "AWS": 70,
+        "Terraform":80,
         //"DroneCI": 70,
-        "AWS": 65,
-        "Grafana": 50,
-        "Prometheus": 50,
-        "SealedSecrets": 85,
-        "CI - Teamcity": 70,
-        "Jenkins": 80,
-        "Ansible": 50,
-        "bash": 70,
+        "Grafana": 70,
+        "Prometheus": 60,
+        "SealedSecrets": 95,
+        "External secrets": 80,
+        //"CI - Teamcity": 70,
+        //"Jenkins": 80,
+        //"Ansible": 50,
+        "Bash": 70,
         //"Powershell": 50,
-        //"Git": 100,
+        "Git": 100,
+        "Go": 60,
         "Python": 80,
-        "Javascript": 80,
+        // "Javascript": 80,
         //"C++ & OpenCV": 65,
         //"Swift": 85,
         //"Android": 70,
@@ -260,11 +266,11 @@ function loadLanguageEN(){
     },
 
     "CT100": {
-      "title": "Certifications",
+      "title": "Training",
       "certifications": {
         "2023 - CKA: Certified Kubernetes administrator": "images/certs/cka.png",
-        "2022 - AWS: Cloud Practitioner": "images/certs/AWS-cloud-practitioner.png",
-        "2022 - Azure: Fundamentals": "images/certs/AZURE-cloud-practitioner.png",
+        "2022 - AWS: Cloud Practitioner": "",
+        "2022 - Azure: Fundamentals": "",
       } 
     },
 
@@ -280,8 +286,8 @@ function loadLanguageEN(){
     "SKL100": {
       "title": "Languages",
       "languages": {
-        "German": 70,
         "English": 90,
+        "German": 70,
         "Spanish": 100,
       } 
     },
@@ -290,7 +296,7 @@ function loadLanguageEN(){
     "WE": [
       {
         "WETitle": "Devops Engineer  -  Evana AG",
-        "WETime": "2024 März - aktuell",
+        "WETime": "2024 March - current",
         "WEDescription": "Management and maintenance of kubernetes cluster, ArgoCD, Azure",
         "WEEnable": "true"
       },
@@ -304,7 +310,7 @@ function loadLanguageEN(){
 
       {
         "WETitle": "CTO  -  Mercury Cash",
-        "WETime": "2022 Jul - current",
+        "WETime": "2022 Jul - 2023 May",
         "WEDescription": "Reconstruction of the IT department, stabilization of the production environment and strategic planning.<br> <strong>Department Management:</strong> - Project planning and creation of performance metrics.<br>- Establish internal security policies, security credential handling and document management<br>- Establish procedures for hiring resources<br> <strong>Cloud migration:</strong> - Migration of the Digital Ocean platform to AWS  <br> - Replacing core parts of the system with new microservices oriented implementations. <br><strong>HR:</strong> - Restructuring of the IT department and creation of a stable team of 6 members.<br><strong>Vendors:</strong> - Review of existing IT service providers, renegotiation of existing contracts <br>",      
         "WEEnable": "true"
 
@@ -314,7 +320,6 @@ function loadLanguageEN(){
         "WETime": "2021 Feb - 2022 May",
         "WEDescription": "Technical lead and DevOps for web development projects<br><strong>Web:</strong> - Planning, development and deployment of strategic web projects for clients such as Ferrero <br> - Development of internal management tools<br> <strong>DevOps:</strong> - Cloud infrastructure planning using Ionos, AWS and onPremises<br>- Construction of CI/CD pipelines for multiple projects<br>",
         "WEEnable": "true"
-     
       },
       {
         "WETitle": "Senior Software Engineer  -  cm3p Gmbh",
@@ -322,13 +327,13 @@ function loadLanguageEN(){
         "WEDescription": "Technical lead and programming of SDK for measurement devices of Leica Geosystems<br><strong>Android:</strong> - Connect, send and receive data from measurement devices, using Bluetooth and Wifi networks.<br><strong>iOS:</strong> - Finish the implementation of the SDK and support the client during the implementation phase.<br>- Update legacy app to improve the functionality and comply with the latest requirements of Android/iOS SDK<br><strong>Swift:</strong> - Cross-platform computer-vision based automation framework based on iOS Vision Library  and Vapor back-end.<br><strong>Computer Vision:</strong> OpenCV, iOS Vision Library",
         "WEEnable": "true"
       },
-      {
-        "WETitle": "Software Automation Engineer  -  Choucair Testing S.A",
-        "WETime": "2013 Apr - 2014 Jan",
-        "WEDescription": "- Develop and use of Test Automation Framework in Java and VB .NET<br>- Selenium and Silk Test<br>- Requirements Analysis ",
-        "WEEnable": "true"
+      // {
+      //   "WETitle": "Software Automation Engineer  -  Choucair Testing S.A",
+      //   "WETime": "2013 Apr - 2014 Jan",
+      //   "WEDescription": "- Develop and use of Test Automation Framework in Java and VB .NET<br>- Selenium and Silk Test<br>- Requirements Analysis ",
+      //   "WEEnable": "true"
       
-      },
+      // },
       {
         "WETitle": "Service Desk Analyst  -  Schlumberger",
         "WETime": "2012 Apr - 2013 Apr",
@@ -345,7 +350,7 @@ function loadLanguageEN(){
       },
       {
         "WETitle": "divider",
-        "WEHeight": 450,
+        "WEHeight": 30,
         "WEEnable": "true"
       },
     ],
@@ -431,10 +436,6 @@ function loadLanguageEN(){
   console.log(data)
 
 }
-
-
-
-
 
 function loadLanguageES(){
 
@@ -600,7 +601,7 @@ function loadData(){
         
       } else{
         addHTML( document.querySelector("#experience"),
-          '<div id="xxx" class="job-wrapper clearfix">\
+          '<div id="xxx" class="job-wrapper clearfix page-break-inside">\
             <div class="company-wrapper clearfix">\
             <div id="WETitle" class="experience-title">'+element.WETitle+'</div>\
             <div id="WETime" class="time dateformat">'+element.WETime+'</div>\
