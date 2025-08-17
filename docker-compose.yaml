@@ -1,0 +1,11 @@
+# docker compose up -d -f /gotenberg/docker-compose.yaml
+services:
+  gotenberg:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3000:3000"
+
+  web:
+    build: .
+    ports:
+      - "8080:8080"

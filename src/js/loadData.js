@@ -1,6 +1,6 @@
 var data = ""
-//loadLanguageEN()
-loadLanguageDE()
+loadLanguageEN()
+// loadLanguageDE()
 loadData()
 
 function loadLanguageDE(){
