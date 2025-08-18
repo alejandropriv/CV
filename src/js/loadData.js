@@ -234,6 +234,7 @@ function loadLanguageEN(){
         "Helm Charts": 80,
         "Azure": 80,
         "AWS": 70,
+        "Docker": 80,
         "Terraform":80,
         //"DroneCI": 70,
         "Grafana": 70,
@@ -246,7 +247,7 @@ function loadLanguageEN(){
         "Bash": 70,
         //"Powershell": 50,
         "Git": 100,
-        "Go": 60,
+        "Go": 50,
         "Python": 80,
         // "Javascript": 80,
         //"C++ & OpenCV": 65,
@@ -268,6 +269,7 @@ function loadLanguageEN(){
     "CT100": {
       "title": "Training",
       "certifications": {
+        "2025 - CKS: In progress":"",
         "2023 - CKA: Certified Kubernetes administrator": "images/certs/cka.png",
         "2022 - AWS: Cloud Practitioner": "",
         "2022 - Azure: Fundamentals": "",
@@ -305,35 +307,53 @@ function loadLanguageEN(){
         "WETime": "2023 Jun - 2024 Feb",
         "WEDescription": "Construction of Jenkins-Pipelines, Ansible-Playbooks, Docker-Images security, Automation of processes",
         "WEEnable": "true"
-      },
-      
-
+      },      
       {
         "WETitle": "CTO  -  Mercury Cash",
         "WETime": "2022 Jul - 2023 May",
-        "WEDescription": "Reconstruction of the IT department, stabilization of the production environment and strategic planning.<br> <strong>Department Management:</strong> - Project planning and creation of performance metrics.<br>- Establish internal security policies, security credential handling and document management<br>- Establish procedures for hiring resources<br> <strong>Cloud migration:</strong> - Migration of the Digital Ocean platform to AWS  <br> - Replacing core parts of the system with new microservices oriented implementations. <br><strong>HR:</strong> - Restructuring of the IT department and creation of a stable team of 6 members.<br><strong>Vendors:</strong> - Review of existing IT service providers, renegotiation of existing contracts <br>",      
+        "WEDescription": [
+          "<div class='company-description-bold'>Strategic IT Leadership & Transformation:</div>",
+          "Directed the reconstruction of the IT department to stabilize production operations and align with long-term business goals. ",
+          // "Departmental Leadership & Governance:",
+          "Oversaw project planning and defined KPIs, stablished security protocols and document governance. Designed streamlined hiring practices<br>",
+          "<div class='company-description-bold'>Cloud Migration & Architecture Modernization:</div>",
+          "Led the migration from DigitalOcean to AWS, directed the replacement of legacy components with microservices-based architectures<br>",
+          // "Talent & Team Development:",
+          // "Orchestrated an IT department restructuring, building a high-performing, stable core team of six;",
+          "<div class='company-description-bold'>Vendor & Supplier Optimization:</div>",
+          "Reviewed IT service providers and renegotiated contracts to improve service delivery and cost alignment."
+        ],
         "WEEnable": "true"
-
       },
       {
         "WETitle": "Senior Fullstack Developer  -  Ad & Vision",
         "WETime": "2021 Feb - 2022 May",
-        "WEDescription": "Technical lead and DevOps for web development projects<br><strong>Web:</strong> - Planning, development and deployment of strategic web projects for clients such as Ferrero <br> - Development of internal management tools<br> <strong>DevOps:</strong> - Cloud infrastructure planning using Ionos, AWS and onPremises<br>- Construction of CI/CD pipelines for multiple projects<br>",
+        "WEDescription": [
+          "Technical lead and DevOps for web development projects<br>",
+          "<div class='company-description-bold'>Web:</div>",
+          "Planning, development and deployment of strategic web projects for clients such as Ferrero<br>",
+          "<div class='company-description-bold'>DevOps:</div>",
+          "Cloud infrastructure planning using Ionos, AWS and onPremises<br>"
+        ],
         "WEEnable": "true"
       },
       {
         "WETitle": "Senior Software Engineer  -  cm3p Gmbh",
         "WETime": "2017 Feb - 2021 Jan",
-        "WEDescription": "Technical lead and programming of SDK for measurement devices of Leica Geosystems<br><strong>Android:</strong> - Connect, send and receive data from measurement devices, using Bluetooth and Wifi networks.<br><strong>iOS:</strong> - Finish the implementation of the SDK and support the client during the implementation phase.<br>- Update legacy app to improve the functionality and comply with the latest requirements of Android/iOS SDK<br><strong>Swift:</strong> - Cross-platform computer-vision based automation framework based on iOS Vision Library  and Vapor back-end.<br><strong>Computer Vision:</strong> OpenCV, iOS Vision Library",
-        "WEEnable": "true"
+        "WEDescription": [ "Technical Lead and SDK Developer - Leica Geosystems measurement devices <br>",
+          "<div class='company-description-bold'>Android & iOS:</div> - Implemented Bluetooth and Wi-Fi communication protocols to facilitate seamless data exchange between Leica Geosystem's measurement devices and Android applications, support the client during the implementation phase.<br>",
+          // "- Update legacy app to improve the functionality and comply with the latest requirements of Android/iOS SDK<br>",
+          "<div class='company-description-bold'>Swift:</div> - Cross-platform computer-vision based automation framework using on iOS Vision and Vapor back-end.<br><strong>Computer Vision:</strong> OpenCV, iOS Vision Library",
+        ],
+        "WEEnable": "true" 
       },
-      // {
-      //   "WETitle": "Software Automation Engineer  -  Choucair Testing S.A",
-      //   "WETime": "2013 Apr - 2014 Jan",
-      //   "WEDescription": "- Develop and use of Test Automation Framework in Java and VB .NET<br>- Selenium and Silk Test<br>- Requirements Analysis ",
-      //   "WEEnable": "true"
+      {
+        "WETitle": "Software Automation Engineer  -  Choucair Testing S.A",
+        "WETime": "2013 Apr - 2014 Jan",
+        "WEDescription": "- Develop and use of Test Automation Framework in Java and VB .NET<br>- Selenium and Silk Test<br>- Requirements Analysis ",
+        "WEEnable": "false"
       
-      // },
+      },
       {
         "WETitle": "Service Desk Analyst  -  Schlumberger",
         "WETime": "2012 Apr - 2013 Apr",
@@ -361,24 +381,32 @@ function loadLanguageEN(){
       {
         "CTitle": "Freelance",
         "CTime": "2016 May - 2016 Dec",
-        "CSubtitle": "Web-Designer / Development",
-        "CDescription": "- Java - backend<br> - Web-Page Development<br>",
-        "CEnable": "false"
+        "CSubtitle": "<div class='company-description-bold'>Web-Designer / Development</div>",
+        "CDescription": [
+          "- Java - backend<br>",
+          "- Web-Page Development<br>",
+          "- Hosting management"
+        ],
+        "CEnable": "true"
       
       },
       {
         "CTitle": "cm3p Gmbh",
         "CTime": "2015 Oct - 2016 Apr",
-        "CSubtitle": "<strong>Master Thesis: Integration from OpenCV in the Smartphone platforms, IPhone, IPad and Android</strong>",
-        "CDescription": "<strong>C++, OpenCV:</strong> Designed an image comparison app using SIFT and SURF, proprietary algorithms ",
+        "CSubtitle": "<div class='company-description-bold'>Integration from OpenCV in the Smartphone platforms, IPhone, IPad and Android</div>",
+        "CDescription": [
+          "<div class='company-description-bold'>Master Thesis - C++, OpenCV:</div> - Developed an image comparison app using SIFT and SURF proprietary algorithms to identify and match key features between images<br>",
+          "- Run benchmarks and performance optimization"
+        ],
         "CEnable": "true"
-      
       },
       {
         "CTitle": "Hochschule Mannheim",
         "CTime": "2015 Feb - 2015 Jun",
-        "CSubtitle": "<strong>Steinbeis - Hiwi, Lab Assistant</strong>",
-        "CDescription": "<strong>C++, OpenCV: </strong>Digital image processing.",
+        "CSubtitle": "<div class='company-description-bold'>Steinbeis - Hiwi, Lab Assistant</div>",
+        "CDescription": [
+          "<div class='company-description-bold'>C++, OpenCV: </div>Digital image processing."
+        ],
         "CEnable": "true"
       
       },
@@ -415,14 +443,14 @@ function loadLanguageEN(){
         "STime": "2015 - 2016",
         "SSubtitle": "M.B.A",
         "SDescription": "Master in Business Administration, M.B.A",
-        "SEnable": "true"
+        "SEnable": "false"
       
       },
       {
         "STitle": "Pontificia Universidad Javeriana",
         "STime": "2004 - 2010",
         "SSubtitle": "Electronic engineering",
-        "SDescription": "- Digital signal and image processing<br> - Computer science<br> Thesis: Real time algorithm for vehicle counting based on interest stripes.<br> - C++ with openCV<br> - http://repository.javeriana.edu.co/handle/10554/7034",
+        "SDescription": "- Digital signal and image processing<br> - Computer science<br> <div class='company-description-bold'>Thesis:</div> Real time algorithm for vehicle counting based on interest stripes.<br> - C++ with openCV<br> - http://repository.javeriana.edu.co/handle/10554/7034",
         "SEnable": "true"
       
       },
@@ -607,7 +635,7 @@ function loadData(){
             <div id="WETime" class="time dateformat">'+element.WETime+'</div>\
           </div>\
           <div class="job-wrapper clearfix">\
-            <div id="WEDescription" class="company-description">'+element.WEDescription+'</div>\
+            <div id="WEDescription" class="company-description">'+ toHtml(element.WEDescription) +'</div>\
           </div>\
         </div>\
         ')
@@ -637,9 +665,9 @@ function loadData(){
               <div id="CTime" class="time dateformat">'+element.CTime+'</div>\
             </div>\
             <div class="job-wrapper clearfix">\
-              <div id="CSubtitle" class="sub-title">'+element.CSubtitle+'</div>\
+              <div id="CSubtitle" class="company-description">'+element.CSubtitle+'</div>\
               <div id="CDescription" class="company-description">\
-                '+element.CDescription+'\
+                '+ toHtml(element.CDescription) +'\
             </div>\
           </div>\
         </div>')
@@ -671,7 +699,7 @@ function loadData(){
           <div class="job-wrapper clearfix">\
             <div id="SSubtitle" class="sub-title">'+element.SSubtitle+'</div>\
             <div id="SDescription" class="company-description">\
-              '+element.SDescription+'\
+              '+ toHtml(element.SDescription) +'\
             </div>\
           </div>\
           </div>');
@@ -688,7 +716,9 @@ function setDividers(data){
   //   document.getElementById(div);
   // })
 }
-
+function toHtml(content) {
+  return Array.isArray(content) ? content.join('') : String(content || '');
+}
 
 
 function setli(ulname, element) {

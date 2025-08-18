@@ -291,6 +291,13 @@ strong {
   padding-bottom: 5px;
 }
 
+.company-description-bold {
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 6px;
+  font-weight: 600;  /* Bolder than normal company-description */
+}
+
  @media (max-width: 450px) {
    .experience .company-wrapper {
      width: 100%;
