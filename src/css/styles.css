@@ -53,7 +53,7 @@ a {
 }
 
 .firma {
-  padding: 15px 0px 0px 20px;
+  padding: 5px 0px 0px 20px;
   display: flex;
 }
 .spacer1 {
@@ -77,7 +77,7 @@ a {
    color: #000;
    text-transform: uppercase;
    margin-top: 0px;
-   padding: 10px 0px 5px 0px;
+   padding: 60px 0px 5px 0px;
    width: 700px;
    font-size: 30px;
    font-weight: 600;
@@ -342,7 +342,7 @@ strong {
   }
 }
  .section-padding-content {
-   padding: 30px 20px 40px 40px;
+   padding: 50px 20px 40px 40px;
 }
  @media (max-width: 850px) {
    .section-padding-content {
