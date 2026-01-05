@@ -1,0 +1,410 @@
+{
+  "contactPresentation": "Ingeniero Devops",
+  "SK100": {
+    "title": "Tecnologías",
+    "training": {
+      "Azure": {
+        "value": 5,
+        "enable": true
+      },
+      "AWS": {
+        "value": 4,
+        "enable": true
+      },
+      "Kubernetes": {
+        "value": 5,
+        "enable": true
+      },
+      "Docker": {
+        "value": 4,
+        "enable": true
+      },
+      "ArgoCD": {
+        "value": 5,
+        "enable": true
+      },
+      "Terraform": {
+        "value": 5,
+        "enable": true
+      },
+      "CI - Teamcity": {
+        "value": 4,
+        "enable": false
+      },
+      "Helm Charts": {
+        "value": 5,
+        "enable": true
+      },
+      "Ansible": {
+        "value": 3,
+        "enable": false
+      },
+      "Prometheus - Grafana": {
+        "value": 4,
+        "enable": true
+      },
+      "Sealed - External Secrets": {
+        "value": 5,
+        "enable": true
+      },
+      "Bash": {
+        "value": 4,
+        "enable": true
+      },
+      "Powershell": {
+        "value": 3,
+        "enable": false
+      },
+      "Git": {
+        "value": 5,
+        "enable": true
+      },
+      "Go": {
+        "value": 2,
+        "enable": false
+      },
+      "Python": {
+        "value": 3,
+        "enable": true
+      },
+      "Javascript": {
+        "value": 4,
+        "enable": false
+      },
+      "C++ & OpenCV": {
+        "value": 4,
+        "enable": false
+      },
+      "Swift": {
+        "value": 3,
+        "enable": false
+      },
+      "Android": {
+        "value": 3,
+        "enable": false
+      },
+      "PHP": {
+        "value": 3,
+        "enable": false
+      },
+      "Selenium": {
+        "value": 4,
+        "enable": true
+      }
+    }
+  },
+  "CT100": {
+    "title": "Certificaciones",
+    "certifications": {
+      "2024 - CKS": "",
+      "2023 - CKA": "images/certs/cka.png",
+      "2022 - AWS": "",
+      "2022 - Azure": ""
+    }
+  },
+  "CC100": {
+    "certifications": {
+      "2011 - ISTQB: Foundation level": "",
+      "2009 - CISCO Networking: CCNA": "",
+      "2007 - Server Configuration": ""
+    } 
+  },
+
+  "SKL100": {
+    "title": "Idiomas",
+    "languages": {
+      "Español": 5,
+      "Ingles": 5,
+      "Aleman": 4
+    } 
+  },
+
+  "WETitleGeneral": "Experiencia laboral",
+
+  "WE": [
+    {
+      "WETitle": "Ingeniero Devops  -  Evana AG",
+      "WETime": "2024 mar - actualmente",
+      "WEDescription": [
+        {
+          "text": "Responsable por el diseño, la operación y la mejora continua de la plataforma de IA de la empresa, con enfoque en infraestructura, pipelines de despliegue, monitoreo y seguridad operativa",
+          "enabled": true
+        },
+        {
+          "title": "Infrastructura cloud",
+          "text": "Azure, Kubernetes",
+          "enabled": true
+        },
+        {
+          "title": "Seguridad",
+          "text": "Trivy, Azure Firewall, Azure Application Gateway",
+          "enabled": true
+        },
+        {
+          "title": "Herramientas CI/CD – IaC",
+          "text": "Azure Pipelines, ArgoCD, Terraform",
+          "enabled": true
+        },
+        {
+          "title": "Automatización",
+          "text": "Bash, Python, AI",
+          "enabled": true
+        },
+        {
+          "title": "Monitoreo – Optimización",
+          "text": "Prometheus, Grafana, Keda",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Ingeniero Devops  -  Schumann Gmbh",
+      "WETime": "2023 jun - 2024 feb",
+      "WEDescription": [
+        {
+          "text": "Responsable por el diseño, la operación y la evolución de un producto propio de la empresa, con enfoque en creación de contaqiners, provisión de infraestructura on-premise y AWS, así como despliegues automatizados",
+          "enabled": true
+        },
+        {
+          "title": "Infrastructura cloud",
+          "text": "AWS, Docker",
+          "enabled": true
+        },
+        {
+          "title": "Seguridad",
+          "text": "Trivy, Falco, Dependency-Track",
+          "enabled": true
+        },
+        {
+          "title": "Herramientas CI/CD – IaC",
+          "text": "Jenkins, Ansible",
+          "enabled": true
+        },
+        {
+          "title": "Automatización",
+          "text": "Bash",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "CTO  -  Mercury Cash",
+      "WETime": "2022 jul - 2023 may",
+      "WEDescription": [
+        {
+          "title": "Liderazgo estratégico",
+          "text": "Responsable de la reestructuración del departamento de TI para estabilizar los procesos de producción y respaldar los objetivos comerciales a largo plazo",
+          "enabled": true
+        },
+        {
+          "title": "Governanza de TI*****",
+          "text": "Oversaw project planning, defined KPIs, established security protocols and document governance, and designed streamlined hiring practices",
+          "enabled": false
+        },
+        {
+          "title": "Migración a la nube y modernización de la arquitectura",
+          "text": "Lider de la migración de DigitalOcean a AWS y la sustitución de componentes heredados por arquitecturas basadas en microservicios",
+          "enabled": true
+        },
+        {
+          "title": "Desarrollo de talento y equipos",
+          "text": "Reestructuré el departamento de TI y formé un equipo central estable y de alto rendimiento de seis personas",
+          "enabled": false
+        },
+        {
+          "title": "Optimización de proveedores",
+          "text": "Revisión de proveedores de servicios de TI y renegociación de contratos para mejorar la calidad del servicio y la optimización de costes",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Desarrollador Fullstack Senior – Ad & Vision",
+      "WETime": "feb 2021 – may 2022",
+      "WEDescription": [
+        {
+          "text": "Lider del departamento técnico y DevOps en proyectos de desarrollo web",
+          "enabled": true
+        },
+        {
+          "title": "Web",
+          "text": "Planificación, desarrollo y despliegue de proyectos web estratégicos para clientes",
+          "enabled": true
+        },
+        {
+          "title": "DevOps",
+          "text": "Planificación de infraestructuras cloud utilizando IONOS, AWS y entornos on-premise",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "divider",
+      "WETime": "",
+      "WEHeight": "100",
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Ingeniero de Software Senior – cm3p GmbH",
+      "WETime": "feb 2017 – ene 2021",
+      "WEDescription": [
+        {
+          "text": "Lider técnico y desarrollador de SDK para dispositivos de medición",
+          "enabled": true
+        },
+        {
+          "title": "Android & iOS",
+          "text": "Implementación de protocolos de comunicación Bluetooth y Wi-Fi para el intercambio de datos entre dispositivos de medición y aplicaciones móviles; soporte a clientes durante la implementación",
+          "enabled": true
+        },
+        {
+          "text": "Actualización de aplicaciones para cumplir con los últimos requisitos de los SDK de Android e iOS",
+          "enabled": false
+        },
+        {
+          "title": "Swift / Computer Vision",
+          "text": "Desarrollo de un framework de automatización multiplataforma de visión por computadora utilizando iOS Vision, backend Vapor y OpenCV",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Trabajo de Máster – cm3p GmbH",
+      "WETime": "oct 2015 – abr 2016",
+      "WEDescription": [
+        {
+          "title": "C++, OpenCV",
+          "text": "Desarrollo de una aplicación de comparación de imágenes utilizando los algoritmos SIFT y SURF para identificar y emparejar características clave de las imágenes",
+          "enabled": true
+        },
+        {
+          "text": "- Benchmarking y optimización del rendimiento",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Ingeniero de Automatización de Software – Choucair Testing S.A",
+      "WETime": "abr 2013 – ene 2014",
+      "WEDescription": [
+        {
+          "text": "- Desarrollo y uso de frameworks de automatización de pruebas en Java y VB .NET",
+          "enabled": true
+        },
+        {
+          "text": "- Selenium y Silk Test",
+          "enabled": true
+        },
+        {
+          "text": "- Análisis de requisitos",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Analista de Service Desk – Schlumberger",
+      "WETime": "abr 2012 – abr 2013",
+      "WEDescription": [
+        {
+          "text": "Soporte IT general y resolución de problemas de red",
+          "enabled": true
+        }
+      ],
+      "WEEnable": false
+    },
+    {
+      "WETitle": "Tester de Software – Subsidiaria de IBM",
+      "WETime": "ene 2010 – ago 2011",
+      "WEDescription": [
+        {
+          "text": "Pruebas de software dinámicas y estáticas",
+          "enabled": true
+        },
+        {
+          "text": "Redacción y planificación de casos de prueba",
+          "enabled": true
+        }
+      ],
+      "WEEnable": false
+    }
+  ],
+
+  "CTitleGeneral": "Contratos - ****** NEEDS TO BE FIXED ******",
+
+  "C": [
+    {
+      "CTitle": "Freelance",
+      "CTime": "2016 May - 2016 Dec",
+      "CSubtitle": "Web - Diseño / Desarrollo",
+      "CDescription": "- Java - backend<br> - Desarrollo Web<br>"      
+    }
+  ],
+  "STitleGeneral": "Educación",
+  "S": [
+    {
+      "STitle": "Hochschule Mannheim",
+      "STime": "2014 – 2016",
+      "SSubtitle": "Máster en Ingeniería de la Información",
+      "SDescription": [
+        {
+          "text": "Visión artificial, sistemas embebidos, biomedicina",
+          "enabled": true
+        },
+        {
+          "title": "Tesis",
+          "text": "Integración de OpenCV en plataformas móviles: iPhone, iPad y Android",
+          "enabled": true
+        }
+      ],
+      "SEnable": true
+    },
+    {
+      "STitle": "EUDE Business School",
+      "STime": "2015 – 2016",
+      "SSubtitle": "M.B.A",
+      "SDescription": [
+        {
+          "text": "Máster en Administración de Empresas, M.B.A",
+          "enabled": true
+        }
+      ],
+      "SEnable": false
+    },
+    {
+      "STitle": "Pontificia Universidad Javeriana",
+      "STime": "2004 – 2010",
+      "SSubtitle": "Ingeniería Electrónica",
+      "SDescription": [
+        {
+          "text": "- Procesamiento digital de señales e imágenes",
+          "enabled": true
+        },
+        {
+          "text": "- Informática",
+          "enabled": true
+        },
+        {
+          "title": "Tesis",
+          "text": "Algoritmo en tiempo real para conteo de vehículos basado en franjas de interés",
+          "enabled": true
+        },
+        {
+          "text": "C++ con OpenCV",
+          "enabled": true
+        },
+        {
+          "text": "Repositorio: http://repository.javeriana.edu.co/handle/10554/7034",
+          "enabled": true
+        }
+      ],
+      "SEnable": true
+    }
+  ]
+}

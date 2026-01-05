@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copy the Go server and src files
 COPY server/server.go .
-COPY src ./src
+# COPY src ./src
 
 # Expose the port
 EXPOSE 8080

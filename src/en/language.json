@@ -1,0 +1,442 @@
+{
+  "contactPresentation": "Devops Engineer",
+  "SK100": {
+    "title": "Technologies",
+    "training": {
+      "Azure": {
+        "value": 5,
+        "enable": true
+      },
+      "AWS": {
+        "value": 4,
+        "enable": true
+      },
+      "Kubernetes": {
+        "value": 5,
+        "enable": true
+      },
+      "Docker": {
+        "value": 4,
+        "enable": true
+      },
+      "ArgoCD": {
+        "value": 5,
+        "enable": true
+      },
+      "Terraform": {
+        "value": 5,
+        "enable": true
+      },
+      "CI - Teamcity": {
+        "value": 4,
+        "enable": false
+      },
+      "Helm Charts": {
+        "value": 5,
+        "enable": true
+      },
+      "Ansible": {
+        "value": 3,
+        "enable": false
+      },
+      "Prometheus - Grafana": {
+        "value": 4,
+        "enable": true
+      },
+      "Sealed - External Secrets": {
+        "value": 5,
+        "enable": true
+      },
+      "Bash": {
+        "value": 4,
+        "enable": true
+      },
+      "Powershell": {
+        "value": 3,
+        "enable": false
+      },
+      "Git": {
+        "value": 5,
+        "enable": true
+      },
+      "Go": {
+        "value": 2,
+        "enable": false
+      },
+      "Python": {
+        "value": 3,
+        "enable": true
+      },
+      "Javascript": {
+        "value": 4,
+        "enable": false
+      },
+      "C++ & OpenCV": {
+        "value": 4,
+        "enable": false
+      },
+      "Swift": {
+        "value": 3,
+        "enable": false
+      },
+      "Android": {
+        "value": 3,
+        "enable": false
+      },
+      "PHP": {
+        "value": 3,
+        "enable": false
+      },
+      "Selenium": {
+        "value": 4,
+        "enable": true
+      }
+    }
+  },
+  "CT100": {
+    "title": "Training",
+    "certifications": {
+      "2024 - CKS": "",
+      "2023 - CKA": "images/certs/cka.png",
+      "2022 - AWS": "",
+      "2022 - Azure": ""
+    } 
+  },
+  "CC100": {
+    "certifications": {
+      "2011 - ISTQB: Foundation level": "",
+      "2009 - CISCO Networking: CCNA": "",
+      "2007 - Server Configuration": ""
+    } 
+  },
+  "SKL100": {
+    "title": "Languages",
+    "languages": {
+      "English": 5,
+      "German": 4,
+      "Spanish": 5
+    } 
+  },
+  "WETitleGeneral": "Work Experience",
+  "WE": [
+    {
+      "WETitle": "Devops Engineer  -  Evana AG",
+      "WETime": "2024 Mar - current",
+      "WEDescription": [
+        {
+          "text": "Responsible for the design, operation, and continuous improvement of the company-wide AI platform, with a focus on infrastructure, deployment pipelines, monitoring, and operational reliability",
+          "enabled": true
+        },
+        {
+          "title": "Cloud-Native Infrastructure",
+          "text": "Azure, Kubernetes",
+          "enabled": true
+        },
+        {
+          "title": "Security",
+          "text": "Trivy, Azure Firewall, Azure Application Gateway",
+          "enabled": true
+        },
+        {
+          "title": "CI/CD – IaC tools",
+          "text": "Azure Pipelines, ArgoCD, Terraform",
+          "enabled": true
+        },
+        {
+          "title": "Automation",
+          "text": "Bash, Python, AI",
+          "enabled": true
+        },
+        {
+          "title": "Monitoring – Optimization",
+          "text": "Prometheus, Grafana, Keda",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Devops Engineer  -  Schumann Gmbh",
+      "WETime": "2023 Jun - 2024 Feb",
+      "WEDescription": [
+        {
+          "text": "Responsible for the operation, and improvement of a company-owned product, with a focus on containerized workloads, provisioning of on-premises and AWS infrastructure, and automated deployments",
+          "enabled": true
+        },
+        {
+          "title": "Cloud-Native Infrastructure",
+          "text": "AWS, Docker",
+          "enabled": true
+        },
+        {
+          "title": "Security",
+          "text": "Trivy, Falco, Dependency-Track",
+          "enabled": true
+        },
+        {
+          "title": "CI/CD – IaC tools",
+          "text": "Jenkins, Ansible",
+          "enabled": true
+        },
+        {
+          "title": "Automation",
+          "text": "Bash",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },     
+    {
+      "WETitle": "CTO  -  Mercury Cash",
+      "WETime": "2022 Jul - 2023 May",
+      "WEDescription": [
+        {
+          "title": "Strategic IT Leadership",
+          "text": "Led the restructuring of the IT department to stabilize production operations and align with long-term business goals",
+          "enabled": true
+        },
+        {
+          "title": "Project management",
+          "text": "Led the project planning, defined KPIs, established security protocols and document governance",
+          "enabled": false
+        },
+        {
+          "title": "Cloud Migration & Architecture Modernization",
+          "text": "Led the migration from DigitalOcean to AWS and replaced legacy components with microservices-based architectures",
+          "enabled": true
+        },
+        {
+          "title": "***Talent & Team Development",
+          "text": "***Restructured the IT department and built a high-performing, stable core team of six",
+          "enabled": false
+        },
+        {
+          "title": "Vendors Optimization",
+          "text": "Reviewed IT service providers and renegotiated contracts to improve service delivery and cost alignment",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Senior Fullstack Developer  -  Ad & Vision",
+      "WETime": "2021 Feb - 2022 May",
+      "WEDescription": [
+        {
+          "text": "Technical lead and DevOps for web development projects",
+          "enabled": true
+        },
+        {
+          "title": "Web",
+          "text": "Planning, development and deployment of strategic web projects for clients",
+          "enabled": true
+        },
+        {
+          "title": "DevOps",
+          "text": "Cloud infrastructure planning using Ionos, AWS and on-premises environments",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "divider",
+      "WETime": "",
+      "WEHeight": "100",
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Senior Software Engineer  -  cm3p Gmbh",
+      "WETime": "2017 Feb - 2021 Jan",
+      "WEDescription": [
+        {
+          "text": "Technical Lead and SDK Developer for measurement devices",
+          "enabled": true
+        },
+        {
+          "title": "Android & iOS",
+          "text": "Implemented Bluetooth and Wi-Fi communication protocols for data exchange between measurement devices and mobile applications; supported clients during implementation",
+          "enabled": true
+        },
+        {
+          "text": "Updated legacy applications to comply with the latest Android and iOS SDK requirements",
+          "enabled": false
+        },
+        {
+          "title": "Swift / Computer Vision",
+          "text": "Built a cross-platform computer-vision automation framework using iOS Vision, Vapor backend and OpenCV",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Master Thesis  -  cm3p Gmbh",
+      "WETime": "2015 Oct - 2016 Apr",
+      "WEDescription": [
+        {
+          "title": "C++, OpenCV",
+          "text": "Developed an image comparison application using SIFT and SURF algorithms to identify and match key image features",
+          "enabled": true
+        },
+        {
+          "text": "- Benchmarking and performance optimization",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Software Automation Engineer  -  Choucair Testing S.A",
+      "WETime": "2013 Apr - 2014 Jan",
+      "WEDescription": [
+        {
+          "text": "- Developed test automation frameworks in Java and VB .NET",
+          "enabled": true
+        },
+        {
+          "text": "- Selenium and Silk Test",
+          "enabled": true
+        },
+        {
+          "text": "- Requirements analysis",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Service Desk Analyst  -  Schlumberger",
+      "WETime": "2012 Apr - 2013 Apr",
+      "WEDescription": [
+        {
+          "text": "General IT support and network troubleshooting",
+          "enabled": true
+        }
+      ],
+      "WEEnable": false
+    },
+    {
+      "WETitle": "Software Tester  -  IBM Subsidiary",
+      "WETime": "2010 Jan - 2011 Aug",
+      "WEDescription": [
+        {
+          "text": "Dynamic and static software testing",
+          "enabled": true
+        },
+        {
+          "text": "Test case writing and planning",
+          "enabled": true
+        }
+      ],
+      "WEEnable": false
+    }
+  ],
+  "CTitleGeneral": 
+    {
+       "CTitle": "Contracts - ****** NEEDS TO BE FIXED ******",
+       "CTEnable": "false"
+    },
+  "C": [
+    {
+      "CTitle": "Freelance",
+      "CTime": "2016 May - 2016 Dec",
+      "CSubtitle": "<div class='company-description-bold'>Web-Designer / Development</div>",
+      "CDescription": [
+        "- Java - backend<br>",
+        "- Web-Page Development<br>",
+        "- Hosting management"
+      ],
+      "CEnable": "false"
+    
+    },
+    {
+      "CTitle": "Hochschule Mannheim",
+      "CTime": "2015 Feb - 2015 Jun",
+      "CSubtitle": "<div class='company-description-bold'>Steinbeis - Hiwi, Lab Assistant</div>",
+      "CDescription": [
+        "<div class='company-description-bold'>C++, OpenCV: </div>Digital image processing."
+      ],
+      "CEnable": "false"
+    
+    },
+    {
+      "CTitle": "Freelance",
+      "CTime": "2011 Oct - 2012 May",
+      "CSubtitle": "<strong>Software Developer</strong>",
+      "CDescription": "<strong>Webrageous.com</strong><br>- PHP, jquery scripts<br><strong>Software Sales and Development</strong><br>- PHP, jquery scripts, Websites testing, Drupal, Wordpress.<br><strong>Others</strong><br>- Testing Applications and set-up of Content Delivery Network ",
+      "CEnable": "false"
+    
+    },
+    {
+      "CTitle": "Pontificia Universidad Javeriana",
+      "CTime": "2006 Jun - 2006 Oct",
+      "CSubtitle": "<strong>Web - Development</strong>",
+      "CDescription": "- Software tools development for the XI Symposium in Image Processing, <br>Signals and Artificial Vision<br>- Web Programming in PHP and MYSQL, Openconf ",
+      "CEnable": "false"
+    
+    }
+  ],
+  "STitleGeneral": "Education",
+
+  "S": [
+    {
+      "STitle": "Hochschule Mannheim",
+      "STime": "2014 - 2016",
+      "SSubtitle": "Master in InformationsTechnik",
+      "SDescription": [
+        {
+          "text": "Artificial Vision, Embedded Systems, Biomedical",
+          "enabled": true
+        },
+        {
+          "title": "Thesis",
+          "text": "Integration from OpenCV on smartphone platforms: iPhone, iPad, and Android",
+          "enabled": true
+        }
+      ],
+      "SEnable": true
+    },
+    {
+      "STitle": "EUDE Business School",
+      "STime": "2015 - 2016",
+      "SSubtitle": "M.B.A",
+      "SDescription": [
+        {
+          "text": "Master in Business Administration, M.B.A",
+          "enabled": true
+        }
+      ],
+      "SEnable": false
+    },
+    {
+      "STitle": "Pontificia Universidad Javeriana",
+      "STime": "2004 - 2010",
+      "SSubtitle": "Electronic Engineering",
+      "SDescription": [
+        {
+          "text": "- Digital signal and image processing",
+          "enabled": true
+        },
+        {
+          "text": "- Computer science",
+          "enabled": true
+        },
+        {
+          "title": "Thesis",
+          "text": "Real-time algorithm for vehicle counting based on interest stripes",
+          "enabled": true
+        },
+        {
+          "text": "C++ with OpenCV",
+          "enabled": true
+        },
+        {
+          "text": "Repository: http://repository.javeriana.edu.co/handle/10554/7034",
+          "enabled": true
+        }
+      ],
+      "SEnable": true
+    }
+  ]
+}
