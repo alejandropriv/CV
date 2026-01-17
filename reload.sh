@@ -1,3 +1,11 @@
+docker info >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+  echo "Docker is running"
+else
+  echo "Docker is NOT running"
+  exit 1
+fi
+
 docker compose down
 docker rmi cv-web:latest
 # docker image prune -a  
@@ -47,7 +55,7 @@ curl -X POST -F "url=http://host.docker.internal:8080/de" \
   --form landscape=false \
   --form scale=1.0 \
   --form nativePageRanges=1-2 \
-  -o ./output/cv-de.pdf
+  -o ./output/cv-de-orig.pdf
 
 gs -sDEVICE=pdfwrite \
    -dCompatibilityLevel=1.4 \
@@ -70,7 +78,7 @@ curl -X POST -F "url=http://host.docker.internal:8080/es" \
   --form landscape=false \
   --form scale=1.0 \
   --form nativePageRanges=1-2 \
-  -o ./output/cv-es.pdf
+  -o ./output/cv-es-orig.pdf
 
 gs -sDEVICE=pdfwrite \
    -dCompatibilityLevel=1.4 \
