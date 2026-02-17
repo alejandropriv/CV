@@ -7,7 +7,10 @@
   // Load the appropriate language based on URL
   switch(lang) {
     case 'de':
-      await loadLanguageDE();
+      await loadLanguageDE1();
+      break;
+    case 'de1':
+      await loadLanguageDE1();
       break;
     case 'es':
       await loadLanguageES();
@@ -41,6 +44,20 @@ async function loadLanguageDE(){
   console.log("Loading German language data...");
   try {
     const response = await fetch('/de/language.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Failed, check logs, Error loading German language data from JSON:', error);
+  }
+}
+
+async function loadLanguageDE1(){
+  console.log("Loading German1 language data...");
+  try {
+    const response = await fetch('/de/language1.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

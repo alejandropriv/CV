@@ -64,7 +64,26 @@ gs -sDEVICE=pdfwrite \
    -sOutputFile=./output/cv-de.pdf \
    ./output/cv-de-orig.pdf
 
+curl -X POST -F "url=http://host.docker.internal:8080/de1" \
+  http://localhost:3000/forms/chromium/convert/url \
+  --form marginTop=0 \
+  --form marginBottom=0 \
+  --form marginLeft=0 \
+  --form marginRight=0 \
+  --form preferCssPageSize=false \
+  --form printBackground=true \
+  --form omitBackground=true \
+  --form landscape=false \
+  --form scale=1.0 \
+  --form nativePageRanges=1-2 \
+  -o ./output/cv-de1-orig.pdf
 
+gs -sDEVICE=pdfwrite \
+   -dCompatibilityLevel=1.4 \
+   -dPDFSETTINGS=/ebook \
+   -dNOPAUSE -dQUIET -dBATCH \
+   -sOutputFile=./output/cv-de1.pdf \
+   ./output/cv-de1-orig.pdf
 
 curl -X POST -F "url=http://host.docker.internal:8080/es" \
   http://localhost:3000/forms/chromium/convert/url \
