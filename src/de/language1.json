@@ -1,5 +1,5 @@
 {
-  "contactPresentation": "Plattform Engineer ",
+  "contactPresentation": "Devops Engineer",
   "SK100": {
     "title": "Technologien",
     "training": {
@@ -8,10 +8,10 @@
         "enable": true
       },
       "AWS": {
-        "value": 4,
+        "value": 5,
         "enable": true
       },
-      "Azure Kubernetes Service": {
+      "Kubernetes": {
         "value": 5,
         "enable": true
       },
@@ -40,10 +40,6 @@
         "enable": false
       },
       "Prometheus - Grafana": {
-        "value": 4,
-        "enable": true
-      },
-      "OpenTelemetry": {
         "value": 4,
         "enable": true
       },
@@ -101,7 +97,7 @@
     "title": "Ausbildung",
     "certifications": {
       "2024 - CKS": "",
-      "2023 - CKA": "images/certs/cka.png",
+      "2023 - CKA": "",
       "2022 - AWS": "",
       "2022 - Azure": ""
     }
@@ -124,19 +120,22 @@
   "WETitleGeneral": "Berufserfahrung",
   "WE": [
     {
+      "WETitle": "Devops Consultant  -  Freelance",
+      "WETime": "2026 Feb. - bis heute",
+      "WEDescription": [
+        {
+          "text": "Kubernetes-Beratung: EKS, Upgrades und Stabilitätsverbesserungen, Überprüfungen und Aktualisierungen von Infrastructure-as-Code, AWS-Support und Kostenoptimierung",
+          "enabled": false
+        }
+      ],
+      "WEEnable": false
+    },
+    {
       "WETitle": "Devops Engineer  -  Evana AG",
       "WETime": "2024 Mär. - bis heute",
       "WEDescription": [
         {
-          "text": "Administration von Azure Kubernetes Service (AKS)",
-          "enabled": true
-        },
-                {
-          "text": "Aufbau von Observability mit Prometheus, grafana und OpenTelemetry",
-          "enabled": true
-        },
-        {
-          "text": "Einsatz von Go, Node.js",
+          "text": "Verantwortlich für Aufbau, Betrieb und kontinuierliche Weiterentwicklung der unternehmensweiten KI-Plattform mit Fokus auf Infrastruktur, Deployment-Pipelines, Monitoring und Betriebssicherheit",
           "enabled": true
         },
         {
@@ -176,10 +175,6 @@
           "enabled": true
         },
         {
-          "text": "Unterstützung bei JVM Workloads",
-          "enabled": true
-        },
-        {
           "title": "Cloud-native Infrastruktur",
           "text": "AWS, Docker",
           "enabled": true
@@ -197,13 +192,13 @@
         {
           "title": "Automatisierung",
           "text": "Bash",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
     },
     {
-      "WETitle": "CTO  -  Mercury Cash",
+      "WETitle": "CTO  -  Mercury Cash - Freelance",
       "WETime": "2022 Jul. - 2023 Mai",
       "WEDescription": [
         {
@@ -229,7 +224,7 @@
         {
           "title": "Optimierung von Anbietern & Lieferanten",
           "text": "Überprüfung von IT-Dienstleistern sowie Neuverhandlung von Verträgen zur Verbesserung der Servicequalität und Kostenoptimierung",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -303,7 +298,7 @@
       "WEEnable": true
     },
     {
-      "WETitle": "Software Automation Engineer – Choucair Testing S.A",
+      "WETitle": "Test Automation Engineer – Choucair Testing S.A",
       "WETime": "Apr. 2013 – Jan. 2014",
       "WEDescription": [
         {

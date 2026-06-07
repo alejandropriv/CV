@@ -120,17 +120,6 @@
   "WETitleGeneral": "Work Experience",
   "WE": [
     {
-      "WETitle": "Devops Consultant  -  Freelance",
-      "WETime": "2026 Feb. - current",
-      "WEDescription": [
-        {
-          "text": "Kubernetes: EKS management, cluster upgrades and stability improvements, Infrastructure-as-Code reviews and updates, AWS support, and cost optimization.",
-          "enabled": true
-        }
-      ],
-      "WEEnable": true
-    },    
-    {
       "WETitle": "Devops Engineer  -  Evana AG",
       "WETime": "2024 Mar - current",
       "WEDescription": [
@@ -192,7 +181,7 @@
         {
           "title": "Automation",
           "text": "Bash",
-          "enabled": false
+          "enabled": true
         }
       ],
       "WEEnable": true
@@ -217,14 +206,14 @@
           "enabled": true
         },
         {
-          "title": "***Talent & Team Development",
-          "text": "***Restructured the IT department and built a high-performing, stable core team of six",
+          "title": "Talent & Team Development",
+          "text": "Restructured the IT department and built a high-performing, stable core team of six",
           "enabled": false
         },
         {
           "title": "Vendors Optimization",
           "text": "Reviewed IT service providers and renegotiated contracts to improve service delivery and cost alignment",
-          "enabled": false
+          "enabled": true
         }
       ],
       "WEEnable": true

@@ -7,17 +7,25 @@
   // Load the appropriate language based on URL
   switch(lang) {
     case 'de':
-      await loadLanguageDE1();
+      await loadLanguage('/de/language.json');
       break;
     case 'de1':
-      await loadLanguageDE1();
+      await loadLanguage('/de/language1.json');
       break;
     case 'es':
-      await loadLanguageES();
+      await loadLanguage('/es/language.json');
+      break;
+    case 'es1':
+      await loadLanguage('/es/language1.json');
       break;
     case 'en':
+      await loadLanguage('/en/language.json');
+      break;
+    case 'en1':
+      await loadLanguage('/en/language1.json');
+      break;
     default:
-      await loadLanguageEN();
+      await loadLanguage('/en/language.json');
       break;
   }
   
@@ -26,59 +34,17 @@
 
 var data = ""
 
-async function loadLanguageEN(){
-  console.log("Loading English language data...");
+async function loadLanguage(path){
+  console.log(`Loading ${path} language data...`);
   try {
-    const response = await fetch('/en/language.json');
+    const response = await fetch(path);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     data = await response.json();
     console.log(data);
   } catch (error) {
-    console.error('Failed, check logs, Error loading English language data from JSON:', error);
-  }
-}
-
-async function loadLanguageDE(){
-  console.log("Loading German language data...");
-  try {
-    const response = await fetch('/de/language.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error('Failed, check logs, Error loading German language data from JSON:', error);
-  }
-}
-
-async function loadLanguageDE1(){
-  console.log("Loading German1 language data...");
-  try {
-    const response = await fetch('/de/language1.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error('Failed, check logs, Error loading German language data from JSON:', error);
-  }
-}
-
-async function loadLanguageES(){
-  console.log("Loading Spanish language data...");
-  try {
-    const response = await fetch('/es/language.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error('Failed, check logs, Error loading Spanish language data from JSON:', error);
+    console.error(`Failed, check logs, Error loading ${path} language data from JSON:`, error);
   }
 }
 

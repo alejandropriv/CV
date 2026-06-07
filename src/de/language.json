@@ -8,7 +8,7 @@
         "enable": true
       },
       "AWS": {
-        "value": 4,
+        "value": 5,
         "enable": true
       },
       "Kubernetes": {
@@ -97,7 +97,7 @@
     "title": "Ausbildung",
     "certifications": {
       "2024 - CKS": "",
-      "2023 - CKA": "images/certs/cka.png",
+      "2023 - CKA": "",
       "2022 - AWS": "",
       "2022 - Azure": ""
     }
@@ -119,6 +119,17 @@
   },
   "WETitleGeneral": "Berufserfahrung",
   "WE": [
+    {
+      "WETitle": "Devops Consultant - Freelance",
+      "WETime": "2026 Feb. - bis heute",
+      "WEDescription": [
+        {
+          "text": "Kubernetes-Beratung: EKS, Upgrades und Stabilitätsverbesserungen, Überprüfungen und Aktualisierungen von Infrastructure-as-Code, AWS-Support und Kostenoptimierung",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
     {
       "WETitle": "Devops Engineer  -  Evana AG",
       "WETime": "2024 Mär. - bis heute",
@@ -181,13 +192,13 @@
         {
           "title": "Automatisierung",
           "text": "Bash",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
     },
     {
-      "WETitle": "CTO  -  Mercury Cash",
+      "WETitle": "CTO  -  Mercury Cash - Freelance",
       "WETime": "2022 Jul. - 2023 Mai",
       "WEDescription": [
         {
@@ -213,7 +224,7 @@
         {
           "title": "Optimierung von Anbietern & Lieferanten",
           "text": "Überprüfung von IT-Dienstleistern sowie Neuverhandlung von Verträgen zur Verbesserung der Servicequalität und Kostenoptimierung",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -287,7 +298,7 @@
       "WEEnable": true
     },
     {
-      "WETitle": "Software Automation Engineer – Choucair Testing S.A",
+      "WETitle": "Test Automation Engineer – Choucair Testing S.A",
       "WETime": "Apr. 2013 – Jan. 2014",
       "WEDescription": [
         {

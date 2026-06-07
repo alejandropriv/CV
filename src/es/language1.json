@@ -127,10 +127,10 @@
       "WEDescription": [
         {
           "text": "Kubernetes: gestión de EKS, actualización y mejora de la estabilidad de clústeres, revisión y mantenimiento de Infraestructura como Código (IaC), soporte en AWS y optimización de costes en la nube.",
-          "enabled": true
+          "enabled": false
         }
       ],
-      "WEEnable": true
+      "WEEnable": false
     }, 
     {
       "WETitle": "Ingeniero Devops  -  Evana AG",
@@ -158,7 +158,7 @@
         {
           "title": "Automatización",
           "text": "Bash, Python, AI",
-          "enabled": false
+          "enabled": true
         },
         {
           "title": "Monitoreo – Optimización",
@@ -226,7 +226,7 @@
         {
           "title": "Optimización de proveedores",
           "text": "Revisión de proveedores de servicios de TI y renegociación de contratos para mejorar la calidad del servicio y la optimización de costes",
-          "enabled": false
+          "enabled": true
         }
       ],
       "WEEnable": true
