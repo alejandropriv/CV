@@ -1,151 +1,73 @@
-docker info >/dev/null 2>&1
-if [ $? -eq 0 ]; then
-  echo "Docker is running"
-else
-  echo "Docker is NOT running"
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+if ! docker info >/dev/null 2>&1; then
+  echo "Docker is not running. Start Docker and try again." >&2
   exit 1
 fi
 
-docker compose down
-docker rmi cv-web:latest
-# docker image prune -a  
-rm -r ./output
+if ! command -v gs >/dev/null 2>&1; then
+  echo "Ghostscript (gs) is required to compress the generated PDFs." >&2
+  exit 1
+fi
 
-docker compose up -d
+mkdir -p output
+docker compose up -d --build
 
-mkdir ./output
-
-until curl -sf http://localhost:3000/health; do
-  echo "Waiting for Gotenberg..."
-  sleep 5
+echo "Waiting for Gotenberg..."
+ready=0
+for _ in {1..60}; do
+  if curl --fail --silent http://localhost:3000/health >/dev/null; then
+    ready=1
+    break
+  fi
+  sleep 2
 done
 
-curl -X POST -F "url=http://host.docker.internal:8080/en" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-en-orig.pdf
+if (( ! ready )); then
+  echo "Gotenberg did not become ready at http://localhost:3000/health." >&2
+  exit 1
+fi
 
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-en.pdf \
-   ./output/cv-en-orig.pdf
+generate_pdf() {
+  local variant="$1"
+  local original="output/cv-${variant}-orig.pdf"
+  local compressed="output/alejandro-prieto-cv-${variant}.pdf"
+  local original_tmp="${original}.tmp"
+  local compressed_tmp="${compressed}.tmp"
 
-curl -X POST -F "url=http://host.docker.internal:8080/en1" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-en1-orig.pdf
+  echo "Generating ${variant} PDF..."
+  curl --fail --silent --show-error \
+    -X POST \
+    -F "url=http://host.docker.internal:8080/${variant}" \
+    http://localhost:3000/forms/chromium/convert/url \
+    --form marginTop=0 \
+    --form marginBottom=0 \
+    --form marginLeft=0 \
+    --form marginRight=0 \
+    --form preferCssPageSize=false \
+    --form printBackground=true \
+    --form omitBackground=true \
+    --form landscape=false \
+    --form scale=1.0 \
+    --form nativePageRanges=1-2 \
+    -o "$original_tmp"
 
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-en1.pdf \
-   ./output/cv-en1-orig.pdf
+  gs -sDEVICE=pdfwrite \
+    -dCompatibilityLevel=1.4 \
+    -dPDFSETTINGS=/ebook \
+    -dNOPAUSE -dQUIET -dBATCH \
+    -sOutputFile="$compressed_tmp" \
+    "$original_tmp"
 
+  mv "$original_tmp" "$original"
+  mv "$compressed_tmp" "$compressed"
+}
 
+for variant in en en1 de de1 es es1; do
+  generate_pdf "$variant"
+done
 
-curl -X POST -F "url=http://host.docker.internal:8080/de" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-de-orig.pdf
-
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-de.pdf \
-   ./output/cv-de-orig.pdf
-
-curl -X POST -F "url=http://host.docker.internal:8080/de1" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-de1-orig.pdf
-
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-de1.pdf \
-   ./output/cv-de1-orig.pdf
-
-
-
-curl -X POST -F "url=http://host.docker.internal:8080/es" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-es-orig.pdf
-
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-es.pdf \
-   ./output/cv-es-orig.pdf
-
-curl -X POST -F "url=http://host.docker.internal:8080/es1" \
-  http://localhost:3000/forms/chromium/convert/url \
-  --form marginTop=0 \
-  --form marginBottom=0 \
-  --form marginLeft=0 \
-  --form marginRight=0 \
-  --form preferCssPageSize=false \
-  --form printBackground=true \
-  --form omitBackground=true \
-  --form landscape=false \
-  --form scale=1.0 \
-  --form nativePageRanges=1-2 \
-  -o ./output/cv-es1-orig.pdf
-
-gs -sDEVICE=pdfwrite \
-   -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/ebook \
-   -dNOPAUSE -dQUIET -dBATCH \
-   -sOutputFile=./output/alejandro-prieto-cv-es1.pdf \
-   ./output/cv-es1-orig.pdf
+echo "PDFs generated successfully in ./output."
