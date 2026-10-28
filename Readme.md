@@ -5,7 +5,8 @@
 - `docx.py` generates Word documents from the language JSON files; `requirements.txt` lists its Python dependency.
 - `reload.sh` generates PDF runs. Each successful run is stored in `output/runs/<UTC timestamp>/`, including the original and compressed PDFs. These run folders are ignored by Git.
 - `output/final/` is reserved for deliverables selected and copied there manually. It is trackable by Git; `reload.sh` never writes to it.
-- Running `python docx.py` directly writes one Word document to `output/alejandro-prieto-cv.docx` by default. `./reload.sh --docx` instead adds all six language variants to the timestamped run folder.
+- Running `python docx.py` directly writes one Word document to `output/alejandro-prieto-cv.docx` by default. `./reload.sh --docx` adds a Word document for every discovered language file to the timestamped run folder.
+- Language URLs use `/es` for `src/es/language.json`, `/es/1` for `src/es/language1.json`, and `/es/2` for `src/es/language2.json`. Existing `/es1` URLs remain aliases for `/es/1`; the same convention applies to other language codes.
 
 Any root-level files left by older generation workflows are legacy outputs; the current `reload.sh` does not read or overwrite them.
 
@@ -31,9 +32,9 @@ For local development without Docker, run `go run ./server` from the project roo
 ./reload.sh
 ```
 
-Each successful run writes the six compressed PDFs and their original versions to a new UTC timestamped folder under `output/runs/`. Copy the versions you want to keep into `output/final/` manually; the script never updates that folder.
+Each successful run writes a compressed PDF and its original version for every discovered language file to a new UTC timestamped folder under `output/runs/`. Copy the versions you want to keep into `output/final/` manually; the script never updates that folder. The filename suffix is the language code plus its optional numeric version, so `src/es/language2.json` produces the `es2` PDF/DOCX filename and uses `/es/2` for PDF rendering.
 
-To include all six Word documents in the same run folder, activate the Python virtual environment and run:
+To include Word documents in the same run folder, activate the Python virtual environment and run:
 
 ```sh
 ./reload.sh --docx

@@ -1,35 +1,28 @@
 (async function() {
-  // Extract language from URL path
-  // Handles: /, /en, /en/, /de, /de/, /es, /es/
+  // Use /<language> for language.json and /<language>/<version> for
+  // numbered files such as language2.json. Keep /es1-style aliases working.
   const pathParts = location.pathname.split('/').filter(part => part.length > 0);
-  const lang = pathParts[0] || 'en';
-  
-  // Load the appropriate language based on URL
-  switch(lang) {
-    case 'de':
-      await loadLanguage('/de/language.json');
-      break;
-    case 'de1':
-      await loadLanguage('/de/language1.json');
-      break;
-    case 'es':
-      await loadLanguage('/es/language.json');
-      break;
-    case 'es1':
-      await loadLanguage('/es/language1.json');
-      break;
-    case 'en':
-      await loadLanguage('/en/language.json');
-      break;
-    case 'en1':
-      await loadLanguage('/en/language1.json');
-      break;
-    default:
-      await loadLanguage('/en/language.json');
-      break;
+  let language = 'en';
+  let version = '';
+
+  if (pathParts.length === 1) {
+    const legacyRoute = pathParts[0].match(/^([a-z]{2}(?:-[a-z]{2})?)([1-9][0-9]*)$/);
+    if (legacyRoute) {
+      [, language, version] = legacyRoute;
+    } else if (/^[a-z]{2}(?:-[a-z]{2})?$/.test(pathParts[0])) {
+      language = pathParts[0];
+    }
+  } else if (
+    pathParts.length === 2 &&
+    /^[a-z]{2}(?:-[a-z]{2})?$/.test(pathParts[0]) &&
+    /^[1-9][0-9]*$/.test(pathParts[1])
+  ) {
+    [language, version] = pathParts;
   }
-  
-  loadData();
+
+  if (await loadLanguage(`/${language}/language${version}.json`)) {
+    loadData();
+  }
 })();
 
 var data = ""
@@ -43,8 +36,10 @@ async function loadLanguage(path){
     }
     data = await response.json();
     console.log(data);
+    return true;
   } catch (error) {
     console.error(`Failed, check logs, Error loading ${path} language data from JSON:`, error);
+    return false;
   }
 }
 
