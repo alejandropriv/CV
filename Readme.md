@@ -10,6 +10,8 @@ Stop the services with `docker compose down`.
 docker compose down
 ```
 
+For local development without Docker, run `go run ./server` from the project root. The server listens on `:8080` and serves files from `src` by default. Override those settings with `CV_ADDR` and `CV_STATIC_DIR` if needed.
+
 ## Update the PDF
 
 ```sh

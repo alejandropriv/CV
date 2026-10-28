@@ -1,17 +1,18 @@
-FROM golang:1.21-alpine
+FROM golang:1.21-alpine AS build
 
-# Set working directory
+WORKDIR /src
+COPY go.mod ./
+COPY server ./server
+RUN mkdir -p /out && go build -o /out/cv-server ./server
+
+FROM alpine:3.20
+
 WORKDIR /app
+COPY --from=build /out/cv-server ./cv-server
+COPY src ./src
 
-# Copy the Go server and src files
-COPY server/server.go .
-# COPY src ./src
+ENV CV_ADDR=0.0.0.0:8080
+ENV CV_STATIC_DIR=/app/src
 
-# Expose the port
 EXPOSE 8080
-
-# Build the Go server
-RUN go build -o server server.go
-
-# Run the server
-CMD ["./server"]
+CMD ["./cv-server"]

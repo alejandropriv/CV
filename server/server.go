@@ -1,26 +1,37 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
-	port := ":8080"
-	fmt.Printf("Server starting on http://localhost%s\n", port)
+	addr := envOrDefault("CV_ADDR", ":8080")
+	staticDir := envOrDefault("CV_STATIC_DIR", "src")
 
-	rewriteToRoot := func(w http.ResponseWriter, r *http.Request) {
-		r.URL.Path = "/"
-		http.DefaultServeMux.ServeHTTP(w, r)
-	}
+	staticFiles := http.FileServer(http.Dir(staticDir))
+	mux := http.NewServeMux()
+	mux.Handle("/", staticFiles)
 
+	serveIndex := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		request := r.Clone(r.Context())
+		urlCopy := *r.URL
+		urlCopy.Path = "/"
+		request.URL = &urlCopy
+		staticFiles.ServeHTTP(w, request)
+	})
 	for _, route := range []string{"/en", "/en1", "/de", "/de1", "/es", "/es1"} {
-		http.HandleFunc(route, rewriteToRoot)
+		mux.Handle(route, serveIndex)
 	}
 
-	// Serve static files from current directory
-	http.Handle("/", http.FileServer(http.Dir("./src")))
+	log.Printf("Serving %s on http://%s", staticDir, addr)
+	log.Fatal(http.ListenAndServe(addr, mux))
+}
 
-	log.Fatal(http.ListenAndServe(port, nil))
+func envOrDefault(key, fallback string) string {
+	if value := os.Getenv(key); value != "" {
+		return value
+	}
+	return fallback
 }
