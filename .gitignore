@@ -1,17 +1,16 @@
-*.DS_Store*
+# macOS
+.DS_Store
 
-# PYTHON 
-# Byte-compiled / optimized / DLL files
+# Python bytecode
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
-# Python virtual environments
+# Local virtual environments
 .venv/
 venv/
 env/
 ENV/
 
-# Python bytecode
-__pycache__/
-*.py[cod]
+# Timestamped generation runs; curated output/final remains trackable
+/output/runs/
