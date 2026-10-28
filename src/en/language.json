@@ -124,7 +124,8 @@
       "WETime": "2026 Feb. - current",
       "WEDescription": [
         {
-          "text": "Kubernetes: EKS management, cluster upgrades and stability improvements, Infrastructure-as-Code reviews and updates, AWS support, and cost optimization.",
+          "title": "Kubernetes",
+          "text": "EKS management, cluster upgrades and stability improvements, Infrastructure-as-Code reviews and updates, AWS support, and cost optimization.",
           "enabled": true
         }
       ],
@@ -156,6 +157,11 @@
         {
           "title": "Automation",
           "text": "Bash, Python, AI",
+          "enabled": false
+        },
+        {
+          "title": "Go",
+          "text": "Unit Testing, Dependency Management and Code Maintenance",
           "enabled": true
         },
         {
@@ -230,6 +236,12 @@
       "WEEnable": true
     },
     {
+      "WETitle": "divider",
+      "WETime": "",
+      "WEHeight": "100",
+      "WEEnable": true
+    },
+    {
       "WETitle": "Senior Fullstack Developer  -  Ad & Vision",
       "WETime": "2021 Feb - 2022 May",
       "WEDescription": [
@@ -248,12 +260,6 @@
           "enabled": true
         }
       ],
-      "WEEnable": true
-    },
-    {
-      "WETitle": "divider",
-      "WETime": "",
-      "WEHeight": "100",
       "WEEnable": true
     },
     {
@@ -314,7 +320,7 @@
           "enabled": true
         }
       ],
-      "WEEnable": true
+      "WEEnable": false
     },
     {
       "WETitle": "Service Desk Analyst  -  Schlumberger",

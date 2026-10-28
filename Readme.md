@@ -1,12 +1,35 @@
-# Run a local go server and gotenberg
+## Run the local Go server and Gotenberg
+
+```sh
 docker compose up -d
+```
+
+Stop the services with `docker compose down`.
+
+```sh
 docker compose down
+```
 
-# To update the PDF
+## Update the PDF
+
+```sh
 ./reload.sh
+```
 
-# Reload firefox
-cmd + shift + R
+## Generate a Word document
 
-# Create the PDF
-Check reload.sh script
+Create and activate the project virtual environment, then install dependencies:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Generate the default English document (or pass `--lang de` / `--lang es`):
+
+```sh
+python docx.py
+```
+
+The generated document is saved under `output/`. Refresh Firefox with `Cmd+Shift+R` to reload the local page.
