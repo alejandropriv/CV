@@ -14,22 +14,7 @@ if ! command -v gs >/dev/null 2>&1; then
 fi
 
 mkdir -p output
-docker compose up -d --build
-
-echo "Waiting for Gotenberg..."
-ready=0
-for _ in {1..60}; do
-  if curl --fail --silent http://localhost:3000/health >/dev/null; then
-    ready=1
-    break
-  fi
-  sleep 2
-done
-
-if (( ! ready )); then
-  echo "Gotenberg did not become ready at http://localhost:3000/health." >&2
-  exit 1
-fi
+docker compose up -d --build --wait --wait-timeout 180
 
 generate_pdf() {
   local variant="$1"

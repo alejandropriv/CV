@@ -1,8 +1,14 @@
 services:
   gotenberg:
-    image: gotenberg/gotenberg:8
+    image: gotenberg/gotenberg:8.38.1
     ports:
       - "3000:3000"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
 
   web:
     build: .
@@ -11,5 +17,8 @@ services:
     environment:
       CV_ADDR: 0.0.0.0:8080
       CV_STATIC_DIR: /app/src
+    depends_on:
+      gotenberg:
+        condition: service_healthy
     volumes:
       - ./src:/app/src:ro

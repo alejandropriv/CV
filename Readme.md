@@ -4,6 +4,8 @@
 docker compose up -d
 ```
 
+Use Docker Compose v2.20 or newer; PDF generation waits for Gotenberg's health check before starting.
+
 Stop the services with `docker compose down`.
 
 ```sh

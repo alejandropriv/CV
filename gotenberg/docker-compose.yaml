@@ -1,6 +1,12 @@
 # docker compose up -d -f /gotenberg/docker-compose.yaml
 services:
   gotenberg:
-    image: gotenberg/gotenberg:8
+    image: gotenberg/gotenberg:8.38.1
     ports:
       - "3000:3000"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
