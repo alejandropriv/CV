@@ -1,5 +1,5 @@
 {
-  "contactPresentation": "Devops Engineer",
+  "contactPresentation": "DevOps Engineer",
   "SK100": {
     "title": "Technologies",
     "training": {
@@ -8,7 +8,7 @@
         "enable": true
       },
       "AWS": {
-        "value": 4,
+        "value": 5,
         "enable": true
       },
       "Kubernetes": {
@@ -51,7 +51,7 @@
         "value": 4,
         "enable": true
       },
-      "Powershell": {
+      "PowerShell": {
         "value": 3,
         "enable": false
       },
@@ -67,7 +67,7 @@
         "value": 3,
         "enable": true
       },
-      "Javascript": {
+      "JavaScript": {
         "value": 4,
         "enable": false
       },
@@ -120,7 +120,19 @@
   "WETitleGeneral": "Work Experience",
   "WE": [
     {
-      "WETitle": "Devops Engineer  -  Evana AG",
+      "WETitle": "DevOps Consultant  -  Freelance",
+      "WETime": "2026 Feb. - current",
+      "WEDescription": [
+        {
+          "title": "Kubernetes",
+          "text": "EKS management, cluster upgrades and stability improvements, Infrastructure-as-Code reviews and updates, AWS support, and cost optimization.",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "DevOps Engineer  -  Evana AG",
       "WETime": "2024 Mar - current",
       "WEDescription": [
         {
@@ -134,7 +146,12 @@
         },
         {
           "title": "Security",
-          "text": "Trivy, Azure Firewall, Azure Application Gateway",
+          "text": "Trivy, Falco, Azure Firewall, Azure Application Gateway",
+          "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "Microsoft Entra ID",
           "enabled": true
         },
         {
@@ -145,22 +162,27 @@
         {
           "title": "Automation",
           "text": "Bash, Python, AI",
+          "enabled": false
+        },
+        {
+          "title": "Go",
+          "text": "Unit Testing, Dependency Management and Code Maintenance",
           "enabled": true
         },
         {
           "title": "Monitoring – Optimization",
-          "text": "Prometheus, Grafana, Keda",
+          "text": "Prometheus, Grafana, KEDA",
           "enabled": true
         }
       ],
       "WEEnable": true
     },
     {
-      "WETitle": "Devops Engineer  -  Schumann Gmbh",
+      "WETitle": "DevOps Engineer  -  Schumann GmbH",
       "WETime": "2023 Jun - 2024 Feb",
       "WEDescription": [
         {
-          "text": "Responsible for the operation, and improvement of a company-owned product, with a focus on containerized workloads, provisioning of on-premises and AWS infrastructure, and automated deployments",
+          "text": "Responsible for the operation and improvement of a company-owned product, with a focus on containerized workloads, provisioning of on-premises and AWS infrastructure, and automated deployments",
           "enabled": true
         },
         {
@@ -174,6 +196,11 @@
           "enabled": true
         },
         {
+          "title": "IAM",
+          "text": "AWS IAM",
+          "enabled": true
+        },
+        {
           "title": "CI/CD – IaC tools",
           "text": "Jenkins, Ansible",
           "enabled": true
@@ -181,7 +208,7 @@
         {
           "title": "Automation",
           "text": "Bash",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -206,35 +233,14 @@
           "enabled": true
         },
         {
-          "title": "Talent & Team Development",
-          "text": "Restructured the IT department and built a high-performing, stable core team of six",
+          "title": "***Talent & Team Development",
+          "text": "***Restructured the IT department and built a high-performing, stable core team of six",
           "enabled": false
         },
         {
           "title": "Vendors Optimization",
           "text": "Reviewed IT service providers and renegotiated contracts to improve service delivery and cost alignment",
-          "enabled": true
-        }
-      ],
-      "WEEnable": true
-    },
-    {
-      "WETitle": "Senior Fullstack Developer  -  Ad & Vision",
-      "WETime": "2021 Feb - 2022 May",
-      "WEDescription": [
-        {
-          "text": "Technical lead and DevOps for web development projects",
-          "enabled": true
-        },
-        {
-          "title": "Web",
-          "text": "Planning, development and deployment of strategic web projects for clients",
-          "enabled": true
-        },
-        {
-          "title": "DevOps",
-          "text": "Cloud infrastructure planning using Ionos, AWS and on-premises environments",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -246,7 +252,33 @@
       "WEEnable": true
     },
     {
-      "WETitle": "Senior Software Engineer  -  cm3p Gmbh",
+      "WETitle": "Senior Fullstack Developer  -  Ad & Vision",
+      "WETime": "2021 Feb - 2022 May",
+      "WEDescription": [
+        {
+          "text": "Technical lead and DevOps engineer for web development projects",
+          "enabled": true
+        },
+        {
+          "title": "Web",
+          "text": "Planning, development and deployment of strategic web projects for clients",
+          "enabled": true
+        },
+        {
+          "title": "DevOps",
+          "text": "Cloud infrastructure planning using Ionos, AWS and on-premises environments",
+          "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "Keycloak",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Senior Software Engineer  -  cm3p GmbH",
       "WETime": "2017 Feb - 2021 Jan",
       "WEDescription": [
         {
@@ -271,7 +303,7 @@
       "WEEnable": true
     },
     {
-      "WETitle": "Master Thesis  -  cm3p Gmbh",
+      "WETitle": "Master's Thesis  -  cm3p GmbH",
       "WETime": "2015 Oct - 2016 Apr",
       "WEDescription": [
         {
@@ -303,7 +335,7 @@
           "enabled": true
         }
       ],
-      "WEEnable": true
+      "WEEnable": false
     },
     {
       "WETitle": "Service Desk Analyst  -  Schlumberger",
@@ -343,19 +375,35 @@
       "CTime": "2016 May - 2016 Dec",
       "CSubtitle": "<div class='company-description-bold'>Web-Designer / Development</div>",
       "CDescription": [
-        "- Java - backend<br>",
-        "- Web-Page Development<br>",
-        "- Hosting management"
+        {
+          "text": "- Java backend<br>- Web page development",
+          "enabled": true
+        }
       ],
       "CEnable": "false"
     
+    },
+    {
+      "CTitle": "cm3p GmbH",
+      "CTime": "2015 Oct - 2016 Apr",
+      "CSubtitle": "App development - Android and iOS",
+      "CDescription": [
+        {
+          "text": "Developed an image comparison app using SIFT and SURF, proprietary algorithms, C++, and OpenCV",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
     },
     {
       "CTitle": "Hochschule Mannheim",
       "CTime": "2015 Feb - 2015 Jun",
       "CSubtitle": "<div class='company-description-bold'>Steinbeis - Hiwi, Lab Assistant</div>",
       "CDescription": [
-        "<div class='company-description-bold'>C++, OpenCV: </div>Digital image processing."
+        {
+          "text": "<div class='company-description-bold'>C++, OpenCV: </div>Digital image processing.",
+          "enabled": true
+        }
       ],
       "CEnable": "false"
     
@@ -364,7 +412,12 @@
       "CTitle": "Freelance",
       "CTime": "2011 Oct - 2012 May",
       "CSubtitle": "<strong>Software Developer</strong>",
-      "CDescription": "<strong>Webrageous.com</strong><br>- PHP, jquery scripts<br><strong>Software Sales and Development</strong><br>- PHP, jquery scripts, Websites testing, Drupal, Wordpress.<br><strong>Others</strong><br>- Testing Applications and set-up of Content Delivery Network ",
+      "CDescription": [
+        {
+          "text": "<strong>Webrageous.com</strong><br>- PHP and jQuery scripts<br><strong>Software sales and development</strong><br>- PHP and jQuery scripts, website testing, and Drupal<br><strong>Other work</strong><br>- Application testing and CDN setup",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     
     },
@@ -372,7 +425,12 @@
       "CTitle": "Pontificia Universidad Javeriana",
       "CTime": "2006 Jun - 2006 Oct",
       "CSubtitle": "<strong>Web - Development</strong>",
-      "CDescription": "- Software tools development for the XI Symposium in Image Processing, <br>Signals and Artificial Vision<br>- Web Programming in PHP and MYSQL, Openconf ",
+      "CDescription": [
+        {
+          "text": "- Software tool development for the XI Symposium on Image Processing, Signals and Artificial Vision<br>- Web programming with PHP, MySQL, and OpenConf",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     
     }
@@ -383,7 +441,7 @@
     {
       "STitle": "Hochschule Mannheim",
       "STime": "2014 - 2016",
-      "SSubtitle": "Master in InformationsTechnik",
+      "SSubtitle": "Master’s in Information Technology",
       "SDescription": [
         {
           "text": "Artificial Vision, Embedded Systems, Biomedical",
@@ -391,7 +449,7 @@
         },
         {
           "title": "Thesis",
-          "text": "Integration from OpenCV on smartphone platforms: iPhone, iPad, and Android",
+          "text": "Integration of OpenCV on smartphone platforms: iPhone, iPad, and Android",
           "enabled": true
         }
       ],

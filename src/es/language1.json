@@ -1,5 +1,5 @@
 {
-  "contactPresentation": "Ingeniero Devops",
+  "contactPresentation": "Ingeniero DevOps",
   "SK100": {
     "title": "Tecnologías",
     "training": {
@@ -8,7 +8,7 @@
         "enable": true
       },
       "AWS": {
-        "value": 4,
+        "value": 5,
         "enable": true
       },
       "Kubernetes": {
@@ -51,7 +51,7 @@
         "value": 4,
         "enable": true
       },
-      "Powershell": {
+      "PowerShell": {
         "value": 3,
         "enable": false
       },
@@ -67,7 +67,7 @@
         "value": 3,
         "enable": true
       },
-      "Javascript": {
+      "JavaScript": {
         "value": 4,
         "enable": false
       },
@@ -94,7 +94,7 @@
     }
   },
   "CT100": {
-    "title": "Certificaciones",
+    "title": "Cursos",
     "certifications": {
       "2024 - CKS": "",
       "2023 - CKA": "",
@@ -114,8 +114,8 @@
     "title": "Idiomas",
     "languages": {
       "Español": 5,
-      "Ingles": 5,
-      "Aleman": 4
+      "Inglés": 5,
+      "Alemán": 4
     } 
   },
 
@@ -123,61 +123,72 @@
   "WE": [
     {
       "WETitle": "Consultor devops - Freelance",
-      "WETime": "2026 Feb. - current",
+      "WETime": "feb. 2026 - actualmente",
       "WEDescription": [
         {
-          "text": "Kubernetes: gestión de EKS, actualización y mejora de la estabilidad de clústeres, revisión y mantenimiento de Infraestructura como Código (IaC), soporte en AWS y optimización de costes en la nube.",
-          "enabled": false
+          "title": "Kubernetes",
+          "text": "Gestión de EKS, actualización y mejora de la estabilidad de clústeres, revisión y mantenimiento de Infraestructura como Código (IaC), soporte en AWS y optimización de costes en la nube.",
+          "enabled": true
         }
       ],
-      "WEEnable": false
+      "WEEnable": true
     }, 
     {
-      "WETitle": "Ingeniero Devops  -  Evana AG",
+      "WETitle": "Ingeniero DevOps  -  Evana AG",
       "WETime": "2024 mar - actualmente",
       "WEDescription": [
         {
-          "text": "Responsable por el diseño, la operación y la mejora continua de la plataforma de IA de la empresa, con enfoque en infraestructura, pipelines de despliegue, monitoreo y seguridad operativa",
+          "text": "Responsable del diseño, la operación y la mejora continua de la plataforma de IA de la empresa, enfocado a infraestructura, pipelines de despliegue, monitoreo y seguridad operativa",
           "enabled": true
         },
         {
-          "title": "Infrastructura cloud",
+          "title": "Infraestructura en la nube",
           "text": "Azure, Kubernetes",
           "enabled": true
         },
         {
           "title": "Seguridad",
-          "text": "Trivy, Azure Firewall, Azure Application Gateway",
+          "text": "Trivy, Falco, Azure Firewall, Azure Application Gateway",
           "enabled": true
         },
         {
-          "title": "Herramientas CI/CD – IaC",
+          "title": "IAM",
+          "text": "Microsoft Entra ID",
+          "enabled": true
+        },
+        {
+          "title": "Herramientas CI/CD - IaC",
           "text": "Azure Pipelines, ArgoCD, Terraform",
           "enabled": true
         },
         {
           "title": "Automatización",
-          "text": "Bash, Python, AI",
+          "text": "Bash, Python e IA",
+          "enabled": false
+        },
+        {
+          "title": "Go",
+          "text": "Pruebas unitarias, gestión de dependencias y mantenimiento del código",
           "enabled": true
         },
         {
-          "title": "Monitoreo – Optimización",
-          "text": "Prometheus, Grafana, Keda",
+          "title": "Monitorización y optimización",
+          "text": "Prometheus, Grafana, KEDA",
           "enabled": true
         }
       ],
       "WEEnable": true
     },
     {
-      "WETitle": "Ingeniero Devops  -  Schumann Gmbh",
+      "WETitle": "Ingeniero DevOps  -  Schumann GmbH",
       "WETime": "2023 jun - 2024 feb",
       "WEDescription": [
         {
-          "text": "Responsable por el diseño, la operación y la evolución de un producto propio de la empresa, con enfoque en creación de contaqiners, provisión de infraestructura on-premise y AWS, así como despliegues automatizados",
+          "text": "Responsable del diseño, la operación y la evolución de un producto propio de la empresa, con enfoque en la creación de workloads contenerizadas, el aprovisionamiento de infraestructura on-premise y en AWS, y los despliegues automatizados.",
           "enabled": true
         },
         {
-          "title": "Infrastructura cloud",
+          "title": "Infraestructura en la nube",
           "text": "AWS, Docker",
           "enabled": true
         },
@@ -187,14 +198,19 @@
           "enabled": true
         },
         {
-          "title": "Herramientas CI/CD – IaC",
+          "title": "IAM",
+          "text": "AWS IAM",
+          "enabled": true
+        },
+        {
+          "title": "Herramientas de CI/CD e IaC",
           "text": "Jenkins, Ansible",
           "enabled": true
         },
         {
           "title": "Automatización",
           "text": "Bash",
-          "enabled": true
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -209,45 +225,24 @@
           "enabled": true
         },
         {
-          "title": "Governanza de TI*****",
-          "text": "Oversaw project planning, defined KPIs, established security protocols and document governance, and designed streamlined hiring practices",
+          "title": "Gobernanza de TI",
+          "text": "Supervisé la planificación de proyectos, definí indicadores clave de rendimiento, establecí protocolos de seguridad y políticas de gestión documental, y diseñé procesos de contratación más ágiles.",
           "enabled": false
         },
         {
           "title": "Migración a la nube y modernización de la arquitectura",
-          "text": "Lider de la migración de DigitalOcean a AWS y la sustitución de componentes heredados por arquitecturas basadas en microservicios",
+          "text": "Lideré la migración de DigitalOcean a AWS y la sustitución de componentes heredados por arquitecturas basadas en microservicios.",
           "enabled": true
         },
         {
           "title": "Desarrollo de talento y equipos",
-          "text": "Reestructuré el departamento de TI y formé un equipo central estable y de alto rendimiento de seis personas",
+          "text": "Reestructuré el departamento de TI y formé un equipo central estable y de alto rendimiento de seis personas.",
           "enabled": false
         },
         {
           "title": "Optimización de proveedores",
-          "text": "Revisión de proveedores de servicios de TI y renegociación de contratos para mejorar la calidad del servicio y la optimización de costes",
-          "enabled": true
-        }
-      ],
-      "WEEnable": true
-    },
-    {
-      "WETitle": "Desarrollador Fullstack Senior – Ad & Vision",
-      "WETime": "feb 2021 – may 2022",
-      "WEDescription": [
-        {
-          "text": "Lider del departamento técnico y DevOps en proyectos de desarrollo web",
-          "enabled": true
-        },
-        {
-          "title": "Web",
-          "text": "Planificación, desarrollo y despliegue de proyectos web estratégicos para clientes",
-          "enabled": true
-        },
-        {
-          "title": "DevOps",
-          "text": "Planificación de infraestructuras cloud utilizando IONOS, AWS y entornos on-premise",
-          "enabled": true
+          "text": "Revisé los proveedores de servicios de TI y renegocié contratos para mejorar la calidad del servicio y optimizar los costes.",
+          "enabled": false
         }
       ],
       "WEEnable": true
@@ -259,25 +254,51 @@
       "WEEnable": true
     },
     {
+      "WETitle": "Desarrollador Fullstack Senior – Ad & Vision",
+      "WETime": "feb 2021 – may 2022",
+      "WEDescription": [
+        {
+          "text": "Lideré el área técnica y asumí responsabilidades de DevOps en proyectos de desarrollo web.",
+          "enabled": true
+        },
+        {
+          "title": "Web",
+          "text": "Planificación, desarrollo y despliegue de proyectos web estratégicos para clientes.",
+          "enabled": true
+        },
+        {
+          "title": "DevOps",
+          "text": "Planificación de infraestructuras cloud con IONOS y AWS, así como en entornos locales.",
+          "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "Keycloak",
+          "enabled": true
+        }
+      ],
+      "WEEnable": true
+    },
+    {
       "WETitle": "Ingeniero de Software Senior – cm3p GmbH",
       "WETime": "feb 2017 – ene 2021",
       "WEDescription": [
         {
-          "text": "Lider técnico y desarrollador de SDK para dispositivos de medición",
+          "text": "Líder técnico y desarrollador de SDK para dispositivos de medición.",
           "enabled": true
         },
         {
           "title": "Android & iOS",
-          "text": "Implementación de protocolos de comunicación Bluetooth y Wi-Fi para el intercambio de datos entre dispositivos de medición y aplicaciones móviles; soporte a clientes durante la implementación",
+          "text": "Implementación de protocolos de comunicación Bluetooth y Wi-Fi para el intercambio de datos entre dispositivos de medición y aplicaciones móviles; asistencia a clientes durante su implementación.",
           "enabled": true
         },
         {
-          "text": "Actualización de aplicaciones para cumplir con los últimos requisitos de los SDK de Android e iOS",
+          "text": "Actualización de aplicaciones para cumplir con los requisitos más recientes de los SDK de Android e iOS.",
           "enabled": false
         },
         {
           "title": "Swift / Computer Vision",
-          "text": "Desarrollo de un framework de automatización multiplataforma de visión por computadora utilizando iOS Vision, backend Vapor y OpenCV",
+          "text": "Desarrollo de un framework multiplataforma de automatización de pruebas con iOS Vision, backend en Vapor y OpenCV.",
           "enabled": true
         }
       ],
@@ -289,7 +310,7 @@
       "WEDescription": [
         {
           "title": "C++, OpenCV",
-          "text": "Desarrollo de una aplicación de comparación de imágenes utilizando los algoritmos SIFT y SURF para identificar y emparejar características clave de las imágenes",
+          "text": "Desarrollo de una aplicación para comparar imágenes mediante los algoritmos SIFT y SURF, para identificar y emparejar sus características clave.",
           "enabled": true
         },
         {
@@ -316,7 +337,7 @@
           "enabled": true
         }
       ],
-      "WEEnable": true
+      "WEEnable": false
     },
     {
       "WETitle": "Analista de Service Desk – Schlumberger",
@@ -346,6 +367,72 @@
     }
   ],
 
+  "CTitleGeneral": {
+    "CTitle": "Contratos",
+    "CTEnable": "false"
+  },
+  "C": [
+    {
+      "CTitle": "Freelance",
+      "CTime": "may 2016 - dic 2016",
+      "CSubtitle": "<div class='company-description-bold'>Diseño y desarrollo web</div>",
+      "CDescription": [
+        {
+          "text": "Backend en Java<br>- Desarrollo de páginas web",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
+    },
+    {
+      "CTitle": "cm3p GmbH",
+      "CTime": "oct 2015 - abr 2016",
+      "CSubtitle": "Desarrollo de aplicaciones - Android e iOS",
+      "CDescription": [
+        {
+          "text": "Desarrollo de una aplicación para comparar imágenes usando SIFT y SURF, algoritmos propietarios, C++ y OpenCV",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
+    },
+    {
+      "CTitle": "Hochschule Mannheim",
+      "CTime": "feb 2015 - jun 2015",
+      "CSubtitle": "<div class='company-description-bold'>Steinbeis - asistente de laboratorio</div>",
+      "CDescription": [
+        {
+          "text": "<div class='company-description-bold'>C++, OpenCV: </div>Procesamiento digital de imágenes.",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
+    },
+    {
+      "CTitle": "Freelance",
+      "CTime": "oct 2011 - may 2012",
+      "CSubtitle": "<strong>Desarrollador de software</strong>",
+      "CDescription": [
+        {
+          "text": "<strong>Webrageous.com</strong><br>- Scripts PHP y jQuery<br><strong>Venta y desarrollo de software</strong><br>- Scripts PHP y jQuery, pruebas de sitios web y Drupal.<br><strong>Otros</strong><br>- Pruebas de aplicaciones y configuración de una red de distribución de contenidos",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
+    },
+    {
+      "CTitle": "Pontificia Universidad Javeriana",
+      "CTime": "jun 2006 - oct 2006",
+      "CSubtitle": "<strong>Desarrollo web</strong>",
+      "CDescription": [
+        {
+          "text": "- Desarrollo de herramientas de software para el XI Simposio de Procesamiento de Imágenes, Señales y Visión Artificial<br>- Programación web con PHP, MySQL y OpenConf",
+          "enabled": true
+        }
+      ],
+      "CEnable": "false"
+    }
+  ],
   "STitleGeneral": "Educación",
   "S": [
     {

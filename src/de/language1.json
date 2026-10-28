@@ -1,5 +1,5 @@
 {
-  "contactPresentation": "Devops Engineer",
+  "contactPresentation": "DevOps Engineer",
   "SK100": {
     "title": "Technologien",
     "training": {
@@ -51,7 +51,7 @@
         "value": 4,
         "enable": true
       },
-      "Powershell": {
+      "PowerShell": {
         "value": 3,
         "enable": false
       },
@@ -67,7 +67,7 @@
         "value": 3,
         "enable": true
       },
-      "Javascript": {
+      "JavaScript": {
         "value": 4,
         "enable": false
       },
@@ -94,7 +94,7 @@
     }
   },
   "CT100": {
-    "title": "Ausbildung",
+    "title": "Schulung",
     "certifications": {
       "2024 - CKS": "",
       "2023 - CKA": "",
@@ -120,18 +120,19 @@
   "WETitleGeneral": "Berufserfahrung",
   "WE": [
     {
-      "WETitle": "Devops Consultant  -  Freelance",
+      "WETitle": "DevOps Consultant - Freelance",
       "WETime": "2026 Feb. - bis heute",
       "WEDescription": [
         {
-          "text": "Kubernetes-Beratung: EKS, Upgrades und Stabilitätsverbesserungen, Überprüfungen und Aktualisierungen von Infrastructure-as-Code, AWS-Support und Kostenoptimierung",
-          "enabled": false
+          "title": "Kubernetes",
+          "text": "EKS-Verwaltung, Cluster-Upgrades und Stabilitätsverbesserungen, Überprüfungen und Aktualisierungen von Infrastructure as Code sowie AWS-Support und Kostenoptimierung.",
+          "enabled": true
         }
       ],
-      "WEEnable": false
+      "WEEnable": true
     },
     {
-      "WETitle": "Devops Engineer  -  Evana AG",
+      "WETitle": "DevOps Engineer  -  Evana AG",
       "WETime": "2024 Mär. - bis heute",
       "WEDescription": [
         {
@@ -144,8 +145,13 @@
           "enabled": true
         },
         {
-          "title": "Sicherheit",
-          "text": "Trivy, Azure Firewall, Azure Application Gateway",
+          "title": "DevSecOps",
+          "text": "Trivy, Falco, Azure Firewall, Azure Application Gateway",
+          "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "Microsoft Entra ID",
           "enabled": true
         },
         {
@@ -155,23 +161,28 @@
         },
         {
           "title": "Automatisierung",
-          "text": "Bash, Python, AI",
+          "text": "Bash, Python, KI",
+          "enabled": false
+        },
+        {
+          "title": "Go",
+          "text": "Unit-Tests, Dependency Management and Codepflege",
           "enabled": true
         },
         {
           "title": "Überwachung – Optimierung",
-          "text": "Prometheus, Grafana, Keda",
+          "text": "Prometheus, Grafana, KEDA",
           "enabled": true
         }
       ],
       "WEEnable": true
     },
     {
-      "WETitle": "Devops Engineer  -  Schumann Gmbh",
+      "WETitle": "DevOps Engineer  -  Schumann GmbH",
       "WETime": "2023 Jun. - 2024 Feb.",
       "WEDescription": [
         {
-          "text": "Verantwortlich für die Aufbau, den Betrieb und die Entwicklung einer unternehmenseigenen Produktplattform mit Fokus auf containerisierte Workloads, Bereitstellung von On-Premises und AWS Infrastruktur und automatisierte Deployments",
+          "text": "Verantwortlich für den Aufbau, den Betrieb und die Weiterentwicklung einer unternehmenseigenen Produktplattform mit Schwerpunkt auf containerisierten Workloads, der Bereitstellung von On-Premises- und AWS-Infrastruktur sowie automatisierten Deployments.",
           "enabled": true
         },
         {
@@ -180,8 +191,13 @@
           "enabled": true
         },
         {
-          "title": "Sicherheit",
+          "title": "DevSecOps",
           "text": "Trivy, Falco, Dependency-Track",
+          "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "AWS IAM",
           "enabled": true
         },
         {
@@ -208,12 +224,12 @@
         },
         {
           "title": "Projektmanagement",
-          "text": "Leitete die Projektplanung , Definition von KPIs, Einrichtung von Sicherheitsprotokollen und Dokumentenverwaltung",
+          "text": "Verantwortlich für die Projektplanung, die Definition von KPIs sowie die Einführung von Sicherheitsprotokollen und Dokumentenmanagement",
           "enabled": false
         },
         {
           "title": "Cloud-Migration & Architekturmodernisierung",
-          "text": "Leitung der Migration von DigitalOcean zu AWS sowie Ablösung von Altsystemen durch microservicebasierte Architekturen",
+          "text": "Leitete die Migration von DigitalOcean zu AWS und ersetzte Altsysteme durch Microservice-Architekturen",
           "enabled": true
         },
         {
@@ -230,7 +246,13 @@
       "WEEnable": true
     },
     {
-      "WETitle": "Senior Fullstack Entwickler – Ad & Vision",
+      "WETitle": "divider",
+      "WETime": "",
+      "WEHeight": "100",
+      "WEEnable": true
+    },
+    {
+      "WETitle": "Senior-Fullstack-Entwickler – Ad & Vision",
       "WETime": "Feb. 2021 – Mai 2022",
       "WEDescription": [
         {
@@ -246,14 +268,13 @@
           "title": "DevOps",
           "text": "Planung von Cloud-Infrastrukturen mit IONOS, AWS sowie On-Premises-Umgebungen",
           "enabled": true
+        },
+        {
+          "title": "IAM",
+          "text": "Keycloak",
+          "enabled": true
         }
       ],
-      "WEEnable": true
-    },
-    {
-      "WETitle": "divider",
-      "WETime": "",
-      "WEHeight": "100",
       "WEEnable": true
     },
     {
@@ -287,7 +308,7 @@
       "WEDescription": [
         {
           "title": "C++, OpenCV",
-          "text": "Entwicklung einer Bildvergleichsanwendung unter Verwendung der SIFT und SURF-Algorithmen zur Identifikation und Zuordnung wichtiger Bildmerkmale",
+          "text": "Entwicklung einer Bildvergleichsanwendung mit SIFT- und SURF-Algorithmen zur Erkennung und Zuordnung wichtiger Bildmerkmale",
           "enabled": true
         },
         {
@@ -314,14 +335,14 @@
           "enabled": true
         }
       ],
-      "WEEnable": true
+      "WEEnable": false
     },
     {
       "WETitle": "Service Desk Analyst  -  Schlumberger",
-      "WETime": "2012 Apr - 2013 Apr",
+      "WETime": "Apr. 2012 – Apr. 2013",
       "WEDescription": [
         {
-          "text": "General IT support and network troubleshooting",
+          "text": "Allgemeiner IT-Support und Behebung von Netzwerkproblemen",
           "enabled": true
         }
       ],
@@ -332,7 +353,7 @@
       "WETime": "Jan. 2010 – Aug. 2011",
       "WEDescription": [
         {
-          "text": "Dynamisches und statisches Softwaretesting",
+          "text": "Dynamische und statische Softwaretests",
           "enabled": true
         },
         {
@@ -353,39 +374,64 @@
       "CTitle": "Freiberuflich",
       "CTime": "2016 Mai - 2016 Dez",
       "CSubtitle": "Web-Designer / Entwickler",
-      "CDescription": "- Java - backend<br> - Web-Page entwicklung<br>",
+      "CDescription": [
+        {
+          "text": "- Java-Backend<br>- Entwicklung von Webseiten<br>",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     },
     {
-      "CTitle": "cm3p Gmbh",
+      "CTitle": "cm3p GmbH",
       "CTime": "2015 Oct - 2016 Apr",
-      "CSubtitle": "App entwicklung - Android und iOS",
-      "CDescription": "Entwicklung einer App zum Bildvergleich unter Verwendung von SIFT und SURF, proprietären Algorithmen, C++, openCV",
+      "CSubtitle": "App-Entwicklung für Android und iOS",
+      "CDescription": [
+        {
+          "text": "Entwicklung einer App zum Bildvergleich mit SIFT und SURF, proprietären Algorithmen, C++ und OpenCV",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     },
     {
       "CTitle": "Hochschule Mannheim",
       "CTime": "2015 Feb - 2015 Jun",
-      "CSubtitle": "Steinbeis - Hiwi, Laborassistent",
-      "CDescription": "Digitale Bildverarbeitung, C++, OpenCV",
+      "CSubtitle": "Steinbeis – studentische Hilfskraft im Labor",
+      "CDescription": [
+        {
+          "text": "Digitale Bildverarbeitung, C++, OpenCV",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     },
     {
       "CTitle": "Freiberuflich",
       "CTime": "2011 Okt - 2012 Mai",
-      "CSubtitle": "Software Entwicklung",
-      "CDescription": "<i>Webrageous.com:</i> - PHP, jquery scripts<br><i>Software Sales and Development:</i>- PHP, jquery scripts, Testen von Websites, Drupal.<br><i>Andere:</i> - Testen von Anwendungen und Einrichten eines CDN",
+      "CSubtitle": "Softwareentwicklung",
+      "CDescription": [
+        {
+          "text": "<i>Webrageous.com:</i> PHP- und jQuery-Skripte<br><i>Software Sales and Development:</i> PHP- und jQuery-Skripte, Website-Tests und Drupal<br><i>Sonstiges:</i> Anwendungstests und Einrichtung eines CDN",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     },
     {
       "CTitle": "Pontificia Universidad Javeriana",
       "CTime": "2006 Jun - 2006 Okt",
       "CSubtitle": "Web - Entwicklung",
-      "CDescription": "- Entwicklung von Software-Tools für das XI Symposium in Bildverarbeitung, <br><span class='spacer1'>&nbsp;</span> Signals und Artificial Vision<br> - Web Programming in PHP and MYSQL, Openconf",
+      "CDescription": [
+        {
+          "text": "- Entwicklung von Softwarewerkzeugen für das XI. Symposium für Bildverarbeitung, Signale und künstliches Sehen<br>- Webprogrammierung mit PHP, MySQL und OpenConf",
+          "enabled": true
+        }
+      ],
       "CEnable": "false"
     }
   ],
-  "STitleGeneral": "Education",
+  "STitleGeneral": "Ausbildung",
   "S": [
     {
       "STitle": "Hochschule Mannheim",
@@ -393,7 +439,7 @@
       "SSubtitle": "Master in Informationstechnik",
       "SDescription": [
         {
-          "text": "Künstliche Vision, Embedded Systems, Biomedizin",
+          "text": "Computer Vision, eingebettete Systeme, Biomedizin",
           "enabled": true
         },
         {
@@ -431,7 +477,7 @@
         },
         {
           "title": "Abschlussarbeit",
-          "text": "Echtzeit-Algorithmus zur Fahrzeugzählung basierend auf Interessensstreifen",
+          "text": "Echtzeitalgorithmus zur Fahrzeugzählung auf Basis von Interessensstreifen",
           "enabled": true
         },
         {
